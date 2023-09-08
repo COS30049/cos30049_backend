@@ -1,8 +1,11 @@
 # BACKEND DEVELOPMENT FOR INTERACTIVE FRONTEND DESIGN
-<p><a target="_blank" href="https://swinburne.instructure.com/courses/52786/assignments/566492"><img alt="Static Badge" src="https://img.shields.io/badge/Submit-Assignment_2_for_Group_set_1-white?style=for-the-badge&labelColor=e72429&color=e72429"></a></p>
+<p><a target="_blank" href="https://swinburne.instructure.com/courses/52786/assignments/566492"><img alt="Static Badge" src="https://img.shields.io/badge/Portal-Assignment_2_for_Group_sest_1-white?style=for-the-badge&color=e72429"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/COS30049/cos30049_backend"><img alt="Static Badge" src="https://img.shields.io/badge/Deadline-%09Sunday%2C_15%2F10%2F2023%2C_11%3A59_pm-white?style=for-the-badge&color=936dd4">
+</a>
+</p>
 
 Please read the [submission guides](#submission) carefully to avoid penalties.
 
+---
 
 ## Core Functional Requrements
 1. All the listed digital assets information should be stored in the database.
