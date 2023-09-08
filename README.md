@@ -4,6 +4,21 @@
 1. All the listed digital assets information should be stored in the database.
 2. The website will implement smart contracts to act as escrow during the trading process, and smart contracts should ensure that assets are held securely until the trade is completed or canceled.
 
+## Overall Tasks
+1. **Database Design and Implementation**: Design and implement the necessary database structure that aligns with the project's requirements. This involves creating tables, defining relationships, and ensuring efficient data storage and retrieval.
+2. **Server-Side Logic**: Implement the backend logic necessary for handling user interactions, data processing, and responding to frontend requests. This includes creating APIs for data submission and retrieval.
+3. **Integration with Front-End**: Ensure smooth integration between the user interface and the backend functionalities. Test and debug interactions to guarantee proper data flow and real-time updates.
+4. **User-Friendly Design**:
+   1) Implement mechanisms for dynamically generating content based on user actions or data changes (e.g., real-time content update).
+   2) Well-crafted messages for ensuring a positive user experience in various scenarios, including but not limited to the following:
+      - Upload Successfully: "Your file has been received and is currently undergoing processing."
+      - Unsupported File Type: "Invalid file type. Please upload a 'sol' file for auditing."
+      - File or Item Not Found: “The address/product could not be found.”
+      - Server Connection Error: "We're currently facing connectivity issues. Please try again later."
+      - …
+5. **Testing and Debugging**: Thoroughly test the backend functionalities and troubleshoot any issues that arise. Ensure data accuracy, proper error handling, and responsiveness.
+6. **Documentation**: Complete the project report, including database design, API documentation, and function description, etc. **_This document is built based on the Assignment 1: Project Design Document_**.
+
 ## Deliverables
 1. **Project Source Code**: A zipped file for the complete project source code, including the files from the assignment 1 (e.g., HTML, CSS, JavaScript files, backend scripts and database files). Please verify the contents of the compressed file to confirm that your project runs without issues.
 2. **Final Project Document**: A document built based on the Assignment 1: Project Design Document.
