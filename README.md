@@ -3,6 +3,7 @@
 
 Please read the [submission guides](#submission) carefully to avoid penalties.
 
+
 ## Core Functional Requrements
 1. All the listed digital assets information should be stored in the database.
 2. The website will implement smart contracts to act as escrow during the trading process, and smart contracts should ensure that assets are held securely until the trade is completed or canceled.
