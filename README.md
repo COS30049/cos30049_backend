@@ -16,8 +16,8 @@
 
 ⚠️ **Submission will only be marked if**: 
 
-- [x] the video recording file is uploaded
-- [x] clear project deployment instructions are provided
+- the video recording file is uploaded
+- clear project deployment instructions are provided
 ---
 
 ## Submission
