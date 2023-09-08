@@ -1,4 +1,7 @@
 # BACKEND DEVELOPMENT FOR INTERACTIVE FRONTEND DESIGN
+<p><a target="_blank" href="https://swinburne.instructure.com/courses/52786/assignments/566492"><img alt="Static Badge" src="https://img.shields.io/badge/Submit-Assignment_2_for_Group_set_1-white?style=for-the-badge&labelColor=e72429&color=e72429"></a></p>
+
+Please read the [submission guides](#submission) carefully to avoid penalties.
 
 ## Core Functional Requrements
 1. All the listed digital assets information should be stored in the database.
@@ -37,8 +40,6 @@
 
 ## Submission
 You must submit your assignment on the Canvas site by the deadline specified **Sunday, 15/10/2023, 11:59 pm**.
-<p><blockquote><a target="_blank" href="https://swinburne.instructure.com/courses/52786/assignments/566492"><img alt="Static Badge" src="https://img.shields.io/badge/Submit-Assignment_2_for_Group_set_1-white?style=for-the-badge&labelColor=e72429&color=e72429"></a></blockquote></p>
-
 - There will be NO hard copy submission required for this assignment.
 - You are required to submit your assignment as a .zip file named with your group number. For example, if your group number is “group 1-23”, you would submit a zipped file named “group 1-23.zip”.
 - Do not include any unnecessary file (e.g. node_modules) in this folder
