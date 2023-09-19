@@ -3,7 +3,7 @@
 </a>
 </p>
 
-Please read the **[submission guides](#submission)** carefully to avoid penalties.
+Please read the **[submission guidelines](#submission)** carefully to avoid penalties.
 
 ---
 
