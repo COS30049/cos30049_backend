@@ -11,9 +11,32 @@ Efficient management and implementation of databases, including schema design, i
 ### Database Design
 MYSQL Table
 - Table User account
+username & password & id/#
 - Transaction
+    - hash
+    - from
+    - to
+    - amount
+    - txn fee
+    - age
 - Assets Table
+    - asset information
+        - \#
+        - title
+        - floor price
+        - volume
+        - description
+        - category
+        - owner -> user account (wallet)
 - Trading Table
+    - assets (foreign key -> assetTable.#)
+    - transaction (foreign key -> transaction.#, nullable, be added after successful(status == done))
+    - buyer (not sure)
+    - seller (not sure, might be duplicate with information in txn)
+    - date of trade
+    - status? (Done -> Create new row in txn table)
+        - Connect with smart contract
+
 - ...
 
 ERD
