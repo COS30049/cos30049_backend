@@ -1,8 +1,17 @@
 ## Document
+
+### Architecture Design
+Doc: https://drive.google.com/file/d/1DnwRQiimq5pku8-QBjmIaTpaFixNiKkW/view?usp=sharing
+
+### Instruction
 Explain abt comment structure, src code structure, how it meets core functionality
+
 Professional standards in organization and writing
+
 Effective and pragmatic database design
+
 Use Cases
+
 Instruction for project deployment
 
 ## Database
