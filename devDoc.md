@@ -21,6 +21,13 @@ Efficient management and implementation of databases, including schema design, i
 MYSQL Table
 - Table User account
 username & password & id/#
+```
+# SCHEMA
+user_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY
+username VARCHAR(50) NOT NULL
+password VARCHAR(255) NOT NULL
+wallet_id VARCHAR(50) NOT NULL
+```
 - Transaction
     - hash
     - from
@@ -47,15 +54,6 @@ username & password & id/#
         - Connect with smart contract
 
 - ...
-
-Schema Conversion
-```
-#Table Account
-user_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY
-username VARCHAR(50) NOT NULL
-password VARCHAR(255) NOT NULL
-wallet_id VARCHAR(50) NOT NULL
-```
 
 ERD
 https://drive.google.com/file/d/1juDInxldOTca9q0uiPiGJEhruoyqZ7tc/view?usp=sharing
