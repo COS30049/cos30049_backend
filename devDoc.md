@@ -20,14 +20,14 @@ Efficient management and implementation of databases, including schema design, i
 ### Database Design
 MYSQL Table
 - Table User account
-username & password & id/#
-```
-# SCHEMA
-user_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY
-username VARCHAR(50) NOT NULL
-password VARCHAR(255) NOT NULL
-wallet_id VARCHAR(50) NOT NULL
-```
+    username & password & id/#
+    ```
+    # SCHEMA
+    id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(50) NOT NULL,
+    password VARCHAR(255) NOT NULL,
+    wallet_id VARCHAR(50) NOT NULL
+    ```
 - Transaction
     - hash
     - from
@@ -35,6 +35,14 @@ wallet_id VARCHAR(50) NOT NULL
     - amount
     - txn fee
     - age
+    ```
+    # SCHEMA
+    hash varchar(50) NOT NULL PRIMARY KEY,
+    payer_wId VARCHAR(50) NOT NULL,
+    payee_wId VARCHAR(50) NOT NULL,
+    amount DOUBLE NOT NULL,
+    txn_fee DOUBLE NOT NULL,
+    ```
 - Assets Table
     - asset information
         - \#
@@ -44,6 +52,17 @@ wallet_id VARCHAR(50) NOT NULL
         - description
         - category
         - owner -> user account (wallet)
+    ```
+    # SCHEMA
+    id VARCHAR(50) NOT NULL PRIMARY KEY,
+    name VARCHAR(20) NOT NULL,
+    desc VARCHAR(200) NULL,
+    category 
+    floor_price DOUBLE NOT NULL,
+    volume DOUBLE NOT NULL,
+    owner userID NOT NULL,
+    FOREIGN KEY owner REFERENCES account(id)   
+    ```
 - Trading Table
     - assets (foreign key -> assetTable.#)
     - transaction (foreign key -> transaction.#, nullable, be added after successful(status == done))
