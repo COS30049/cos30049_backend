@@ -11,7 +11,7 @@
 >2. [integers](#integers) 
 >3. [addresses](#addresses) 
 >4. [fixed-size byte arrays](#fixed-size-byte-arrays) 
->5. [enumeration/enum](#enumeration-enum)
+>5. [enumeration/enum](#enumerationenum)
 
 ### Boolean
 
@@ -165,10 +165,10 @@ mapping(address => address) public swapPair;
 
 # Control Flow
 
->1. `if/else`
->2. `for` loop
->3. `while` loop
->4. `do-while` loop
+>1. [`if/else`](#ifelse)
+>2. [`for` loop](#for-loop)
+>3. [`while` loop](#while-loop)
+>4. [`do-while` loop](#do-while-loop)
 
 ## `if/else`
 
