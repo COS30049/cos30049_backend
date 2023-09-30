@@ -1,8 +1,13 @@
+# Main Contents
+>[Data Types](#data-types)
+>[Control Flow](#control-flow)
+>[Function](#function)
+>[Modify Contract State](#modify-contract-state)
 
 # Data Types
 
->1. [Value Type](#value-types)
->2. [Reference Type](#reference-types)
+>1. [Value Types](#value-types)
+>2. [Reference Types](#reference-types)
 >3. [Mapping Type](#mapping-type)
 
 ## Value Types
