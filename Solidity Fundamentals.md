@@ -1,7 +1,7 @@
 
 # Data Types
 
->1. [Value Type](#Value Types)
+>1. [Value Type](#value-types)
 >2. Reference Type
 >3. Mapping Type
 
