@@ -14,6 +14,8 @@
 
 ## Value Types
 
+\[[back to top ↑](#main-contents)\]
+
 >1. [boolean](#boolean) 
 >2. [integers](#integers) 
 >3. [addresses](#addresses) 
@@ -94,6 +96,8 @@ function enumToUint() external view returns(uint){
 
 ## Reference Types
 
+\[[back to top ↑](#main-contents)\]
+
 >1. [Array](#array)
 >2. [Struct](#struct)
 
@@ -138,6 +142,8 @@ Student student; // Declare a student structure
 
 ## Mapping Type
 
+\[[back to top ↑](#main-contents)\]
+
 >map a Value to its corresponding Key. Used for querying
 
 **Syntax**
@@ -155,6 +161,8 @@ mapping(address => address) public swapPair;
 
 # Data Storage
 
+\[[back to top ↑](#main-contents)\]
+
 >There are three types of data storage locations: storage, memory and calldata.
 
 - `storage`
@@ -171,6 +179,8 @@ mapping(address => address) public swapPair;
 	- consumes less *gas*
 
 # Control Flow
+
+\[[back to top ↑](#main-contents)\]
 
 >1. [`if/else`](#ifelse)
 >2. [`for` loop](#for-loop)
@@ -228,6 +238,8 @@ function doWhileTest() public pure returns(uint256){
 
 # Function
 
+\[[back to top ↑](#main-contents)\]
+
 ## Declaration
 
 **Syntax**
@@ -256,6 +268,8 @@ function returnMultiple() public pure returns(uint256, bool, uint256[3] memory){
 ```
 
 # Modify Contract State
+
+\[[back to top ↑](#main-contents)\]
 
 >The contract state variables are stored on block chain, and gas fee is very expensive.
 >- If you don't rewrite these variables, you don't need to pay gas.
