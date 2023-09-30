@@ -6,15 +6,11 @@
 
 # Data Types
 
-\[[back to top ↑](#main-contents)\]
-
 >1. [Value Types](#value-types)
 >2. [Reference Types](#reference-types)
 >3. [Mapping Type](#mapping-type)
 
 ## Value Types
-
-\[[back to top ↑](#main-contents)\]
 
 >1. [boolean](#boolean) 
 >2. [integers](#integers) 
