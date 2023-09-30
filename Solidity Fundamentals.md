@@ -1,8 +1,8 @@
 # Main Contents
->[Data Types](#data-types)
->[Control Flow](#control-flow)
->[Function](#function)
->[Modify Contract State](#modify-contract-state)
+>- [Data Types](#data-types)
+>- [Control Flow](#control-flow)
+>- [Function](#function)
+>- [Modify Contract State](#modify-contract-state)
 
 # Data Types
 
