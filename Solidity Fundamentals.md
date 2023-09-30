@@ -2,16 +2,16 @@
 # Data Types
 
 >1. [Value Type](#value-types)
->2. Reference Type
->3. Mapping Type
+>2. [Reference Type](#reference-types)
+>3. [Mapping Type](#mapping-type)
 
 ## Value Types
 
->1. boolean 
->2. integer 
->3. address 
->4. fixed-size byte arrays, 
->5. enumeration/enum
+>1. [boolean](#boolean) 
+>2. [integers](#integers) 
+>3. [addresses](#addresses) 
+>4. [fixed-size byte arrays](#fixed-size-byte-arrays) 
+>5. [enumeration/enum](#enumeration-enum)
 
 ### Boolean
 
@@ -87,8 +87,8 @@ function enumToUint() external view returns(uint){
 
 ## Reference Types
 
->1. Array
->2. Struct
+>1. [Array](#array)
+>2. [Struct](#struct)
 
 ### Array
 
