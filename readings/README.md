@@ -10,7 +10,7 @@
 - **contents**: [`Modifiers`](https://github.com/COS30049/cos30049_backend/blob/main/readings/%5BSOL%5D%20Contract%20interactions%20and%20libraries.md#modifiers) | [`Events`](https://github.com/COS30049/cos30049_backend/blob/main/readings/%5BSOL%5D%20Contract%20interactions%20and%20libraries.md#events) | [`Inheritance`](https://github.com/COS30049/cos30049_backend/blob/main/readings/%5BSOL%5D%20Contract%20interactions%20and%20libraries.md#inheritance) | [`Libraries`](https://github.com/COS30049/cos30049_backend/blob/main/readings/%5BSOL%5D%20Contract%20interactions%20and%20libraries.md#libraries) | [`Import`](https://github.com/COS30049/cos30049_backend/blob/main/readings/%5BSOL%5D%20Contract%20interactions%20and%20libraries.md#import) | [`Error handling`](https://github.com/COS30049/cos30049_backend/blob/main/readings/%5BSOL%5D%20Contract%20interactions%20and%20libraries.md#error-handling) | [`Overloading`](https://github.com/COS30049/cos30049_backend/blob/main/readings/%5BSOL%5D%20Contract%20interactions%20and%20libraries.md#overloading) 
 
 #### Testing
-- **ref**: [`Week 7`](https://swinburne.instructure.com/courses/52786/pages/week-7?module_item_id=3673697) - [`Slides`] (https://swinburne.instructure.com/courses/52786/files/26671054) [`⭳`] (https://swinburne.instructure.com/courses/52786/files/26671054/download?download_frd=1)
+- **ref**: [`Week 7`](https://swinburne.instructure.com/courses/52786/pages/week-7?module_item_id=3673697) - [`Slides`] (https://swinburne.instructure.com/courses/52786/files/26671054) [`⭳`](https://swinburne.instructure.com/courses/52786/files/26671054/download?download_frd=1)
 - **contents**:
 
 #### Audit & Security
