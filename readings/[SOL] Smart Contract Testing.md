@@ -1,14 +1,13 @@
----
-title: Week 7 - Smart Contract Testing
-tags:
-  - COS30049/lectures
-  - mutation_testing
-  - truffle
-  - ganache
----
+## Main Contents
+1. [Solidity Testing](#solidity-testing)
+2. [Testing Frameworks](#testing-frameworks)
+3. [Ganache](#ganache)
+
 ## Solidity Testing
 
->Testing involves checking the correctness, security, and performance of smart contracts
+\[[← See all readings](https://github.com/COS30049/cos30049_backend/tree/main/readings/README.md)\]
+
+> Testing involves checking the correctness, security, and performance of smart contracts
 
 ### Contract under test
 
@@ -36,7 +35,7 @@ contract MyContract {
 - `Def`: validate the behaviour of individual functions or components of a contract. 
 - `Purpose`: identify and fix bugs at an early stage, ensuring each function of the contract works as intended
 
-Unit test for `setMyNumber()`function of contract [[#Contract under test|MyContract]]
+Unit test for `setMyNumber()`function of contract [`MyContract`](#contract-under-test) 
 ```js
 it("should set MyNumber to the correct value", async () => {
 	await myContract.setMyNumber(10, { from: accounts[0] });
@@ -50,7 +49,7 @@ it("should set MyNumber to the correct value", async () => {
 - `Purpose`: ensure that contracts can work together seamlessly, identifying and addressing any interoperability issues
 
 Integration test to verify that `setMyNumber()` and `setMySecondNumber()` work together correctly with `getNumbersSum()`
-from contract [[#Contract under test|MyContract]]
+from contract [`MyContract`](#contract-under-test) 
 ```js
 it("should correctly calculate the sum after setting numbers", async () => {
 	await myContract.setMyNumber(10, { from: accounts[0] });
@@ -61,6 +60,8 @@ it("should correctly calculate the sum after setting numbers", async () => {
 ```
 
 ## Testing Frameworks
+
+\[[back to top ↑](#main-contents)\] \[[← See all readings](https://github.com/COS30049/cos30049_backend/tree/main/readings/README.md)\]
 
 >- provide a set of tools and practices designed to help developers test their contracts more effectively.
 >- most widely used testing frameworks for Solidity are **Truffle**, **Hardhat**, **Waffle**, and **Remix**
@@ -148,7 +149,7 @@ module exports = function (deployer) {
 	deployer.deploy(SimpleStorage);
 };
 ```
->- `2_deploy_simplestorage.js`: deploys  [[#Create a contract|SimpleStorage]] contract onto the `Ethereum` blockchain or a simulated blockchain environment like `Ganache` for development and testing purposes
+>- `2_deploy_simplestorage.js`: deploys [`SimpleStorage`](#create-a-contract) contract onto the `Ethereum` blockchain or a simulated blockchain environment like `Ganache` for development and testing purposes
 >- `artifacts.require()`: a part of `Truffle`'s contract abstraction which helps to fetch the compiled contract artifacts
 >- `module.exports` is a `node.js` syntax that exports a function to be used in other files
 >	- parameter `deployer`: a `Truffle` object that assists in deploying smart contracts onto the network
@@ -170,7 +171,7 @@ contract('SimpleStorage', (accounts) => {
 	});
 });
 ```
->- `contract()`: provided by `Truffle` for grouping together a suite of tests pertaining the [[#Create a contract|SimpleStorage]] contract
+>- `contract()`: provided by `Truffle` for grouping together a suite of tests pertaining the [`SimpleStorage`](#create-a-contract) contract
 >- parameter `accounts`: an array of account addresses available during testing, provided by the `Ethereum client` (like `Ganache`).
 
 ##### Run the Test
@@ -222,6 +223,8 @@ Your test should now run, and if everything is set up correctly, it should pass.
 
 ## Ganache
 
+\[[back to top ↑](#main-contents)\] \[[← See all readings](https://github.com/COS30049/cos30049_backend/tree/main/readings/README.md)\]
+
 > simply an Ethereum blockchain simulator
 
 **Advantages**
@@ -229,4 +232,4 @@ Your test should now run, and if everything is set up correctly, it should pass.
 - **Conveniently fork** (branch) an existing blockchain network (without waiting for block synchronization) 
 - **Simulate any account** (you can simulate the use of any user's token in the environment without a private key).
 
-### Usage: see slides (p.17~)
+### Usage: see [slides](https://github.com/COS30049/cos30049_backend/blob/main/readings/README.md#testing) | [⭳](https://swinburne.instructure.com/courses/52786/files/26671054/download?download_frd=1) (p.17~)
