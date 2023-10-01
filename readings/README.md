@@ -1,9 +1,10 @@
 ## Structure
 
-### \[SOL\] Fundamentals
+### SOLIDITY \[SOL\]
+#### Fundamentals
 - **ref**: [`Week 5`](https://swinburne.instructure.com/courses/52786/modules/items/3673698) - [`Slides`](https://swinburne.instructure.com/courses/52786/files/26313982)
 - **contents**: [`Data Types`](https://github.com/COS30049/cos30049_backend/blob/main/readings/%5BSOL%5D%20Fundamentals.md#data-types) | [`Control Flow`](https://github.com/COS30049/cos30049_backend/blob/main/readings/%5BSOL%5D%20Fundamentals.md#control-flow) | [`Function`](https://github.com/COS30049/cos30049_backend/blob/main/readings/%5BSOL%5D%20Fundamentals.md#function) | [`Modify Contract State`](https://github.com/COS30049/cos30049_backend/blob/main/readings/%5BSOL%5D%20Fundamentals.md#modify-contract-state)
 
-### \[SOL\] Contract interactions and libraries
+#### Contract interactions and libraries
 - **ref**: [`Week 6`](https://swinburne.instructure.com/courses/52786/pages/week-6?module_item_id=3673699) -  [`Sildes`](https://swinburne.instructure.com/courses/52786/files/26526976)
 - **contents**: [`Modifiers`](https://github.com/COS30049/cos30049_backend/blob/main/readings/%5BSOL%5D%20Contract%20interactions%20and%20libraries.md#modifiers) | [`Events`](https://github.com/COS30049/cos30049_backend/blob/main/readings/%5BSOL%5D%20Contract%20interactions%20and%20libraries.md#events) | [`Inheritance`](https://github.com/COS30049/cos30049_backend/blob/main/readings/%5BSOL%5D%20Contract%20interactions%20and%20libraries.md#inheritance) | [`Libraries`](https://github.com/COS30049/cos30049_backend/blob/main/readings/%5BSOL%5D%20Contract%20interactions%20and%20libraries.md#libraries) | [`Import`](https://github.com/COS30049/cos30049_backend/blob/main/readings/%5BSOL%5D%20Contract%20interactions%20and%20libraries.md#import) | [`Error handling`](https://github.com/COS30049/cos30049_backend/blob/main/readings/%5BSOL%5D%20Contract%20interactions%20and%20libraries.md#error-handling) | [`Overloading`](https://github.com/COS30049/cos30049_backend/blob/main/readings/%5BSOL%5D%20Contract%20interactions%20and%20libraries.md#overloading) 
