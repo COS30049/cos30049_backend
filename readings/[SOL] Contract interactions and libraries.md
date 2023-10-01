@@ -10,7 +10,7 @@
 
 ## Modifiers
 
-\[[back to top ↑](#main-contents)\]
+\[[← See all readings](https://github.com/COS30049/cos30049_backend/tree/main/readings/README.md)\]
 
 >- a special type of function that declares characteristics that a function possesses.
 >- primary use case is to **perform checks** before running a function, such as checking addresses, variables, balances, etc.
@@ -34,7 +34,7 @@ function changeOwner(address _newOwner) external onlyOwner public {
 
 ## Events
 
-\[[back to top ↑](#main-contents)\]
+\[[back to top ↑](#main-contents)\] \[[← See all readings](https://github.com/COS30049/cos30049_backend/tree/main/readings/README.md)\]
 
 ### Declaration
 
@@ -83,7 +83,7 @@ contract Owner {
 
 ## Inheritance
 
-\[[back to top ↑](#main-contents)\]
+\[[back to top ↑](#main-contents)\] \[[← See all readings](https://github.com/COS30049/cos30049_backend/tree/main/readings/README.md)\]
 
 >a mechanism where you can derive a class from another class for a hierarchy of classes that share a set of attributes and methods
 
@@ -237,7 +237,7 @@ contract interactBAYC {
 
 ## Libraries
 
-\[[back to top ↑](#main-contents)\]
+\[[back to top ↑](#main-contents)\] \[[← See all readings](https://github.com/COS30049/cos30049_backend/tree/main/readings/README.md)\]
 
 > - special type of contract, designed to enhance the reusability of Solidity code and reduce gas consumption
 > - typically consist of a collection of useful functions
@@ -297,7 +297,7 @@ function getString2(uint256 _number) public pure returns(string memory){
 ```
 ## Import
 
-\[[back to top ↑](#main-contents)\]
+\[[back to top ↑](#main-contents)\] \[[← See all readings](https://github.com/COS30049/cos30049_backend/tree/main/readings/README.md)\]
 
 >Use `import` to import contracts from other source codes, making development more modular. Syntax is pretty much the same as `JS`
 
@@ -323,7 +323,7 @@ function getString2(uint256 _number) public pure returns(string memory){
 
 ## Error Handling
 
-\[[back to top ↑](#main-contents)\]
+\[[back to top ↑](#main-contents)\] \[[← See all readings](https://github.com/COS30049/cos30049_backend/tree/main/readings/README.md)\]
 
 ### `error`
 >- a new feature in solidity 0.8 that saves gas and informs users why the operation failed
@@ -352,7 +352,7 @@ assert(condition);
 
 ## Overloading
 
-\[[back to top ↑](#main-contents)\]
+\[[back to top ↑](#main-contents)\] \[[← See all readings](https://github.com/COS30049/cos30049_backend/tree/main/readings/README.md)\]
 
 >- **functions** can be overloaded only
 >- **modifiers** cannot be overloaded
