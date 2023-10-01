@@ -255,6 +255,7 @@ function <function name>(parameters [optional]) [internal|external] [pure|view|p
 - `pure|view|payable`: keywords that dictate a Solidity functions behaviour.
 	- `pure`: cannot read nor write state variables on-chain
 	- `view`: cannot write but can read state variables on-chain
+ 	- `payable`: ensures that function can send and receive Ether(`ETH`) 
 ### Output
  
 >- `returns` is added after the function name to declare variable type and variable name
