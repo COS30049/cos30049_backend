@@ -6,7 +6,7 @@
 
 # Data Types
 
-\[[← See all readings](https://github.com/COS30049/cos30049_backend/tree/main/readings)\]
+\[[← See all readings](https://github.com/COS30049/cos30049_backend/tree/main/readings/README.md)\]
 
 >1. [Value Types](#value-types)
 >2. [Reference Types](#reference-types)
@@ -178,7 +178,7 @@ mapping(address => address) public swapPair;
 
 # Control Flow
 
-\[[back to top ↑](#main-contents)\] \[[← See all readings](https://github.com/COS30049/cos30049_backend/tree/main/readings)\]
+\[[back to top ↑](#main-contents)\] \[[← See all readings](https://github.com/COS30049/cos30049_backend/tree/main/readings/README.md)\]
 
 >1. [`if/else`](#ifelse)
 >2. [`for` loop](#for-loop)
@@ -236,7 +236,7 @@ function doWhileTest() public pure returns(uint256){
 
 # Function
 
-\[[back to top ↑](#main-contents)\] \[[← See all readings](https://github.com/COS30049/cos30049_backend/tree/main/readings)\]
+\[[back to top ↑](#main-contents)\] \[[← See all readings](https://github.com/COS30049/cos30049_backend/tree/main/readings/README.md)\]
 
 ## Declaration
 
@@ -267,7 +267,7 @@ function returnMultiple() public pure returns(uint256, bool, uint256[3] memory){
 
 # Modify Contract State
 
-\[[back to top ↑](#main-contents)\] \[[← See all readings](https://github.com/COS30049/cos30049_backend/tree/main/readings)\]
+\[[back to top ↑](#main-contents)\] \[[← See all readings](https://github.com/COS30049/cos30049_backend/tree/main/readings/README.md)\]
 
 >The contract state variables are stored on block chain, and gas fee is very expensive.
 >- If you don't rewrite these variables, you don't need to pay gas.
