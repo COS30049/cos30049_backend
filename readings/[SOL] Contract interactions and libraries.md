@@ -7,6 +7,8 @@
 6. [Error handling](#error-handling)
 7. [Overloading](#overloading)
 
+Jump to important links:
+1. [ERC](https://github.com/COS30049/cos30049_backend/blob/main/readings/%5BSOL%5D%20Contract%20interactions%20and%20libraries.md#see-ethereum-request-for-comment-erc)
 
 ## Modifiers
 
