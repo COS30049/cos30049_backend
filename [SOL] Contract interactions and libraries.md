@@ -1,9 +1,4 @@
----
-title: Week 6 – Contract Interaction and Libraries
-tags:
-  - COS30049/lectures
-  - solidity
----
+
 ## Modifiers
 
 >- a special type of function that declares characteristics that a function possesses.
