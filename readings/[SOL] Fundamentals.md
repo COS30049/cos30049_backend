@@ -6,6 +6,8 @@
 
 # Data Types
 
+\[[← See all readings](https://github.com/COS30049/cos30049_backend/tree/main/readings)\]
+
 >1. [Value Types](#value-types)
 >2. [Reference Types](#reference-types)
 >3. [Mapping Type](#mapping-type)
