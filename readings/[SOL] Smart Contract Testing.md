@@ -11,7 +11,7 @@
 
 ### Contract under test
 
-```sol
+```solidity
 contract MyContract {
 	uint256 public myNumber;
 	uint356 public mySecondNumber;
@@ -120,7 +120,7 @@ This will create a project with the following directory structure
 >directory: `contracts`
 >filename: `SimpleStorage.sol`
 
-```sol
+```solidity
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
