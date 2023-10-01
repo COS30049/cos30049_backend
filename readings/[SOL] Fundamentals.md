@@ -22,7 +22,7 @@
 
 #### Boolean
 
-```sol
+```solidity
 // Boolean 
 bool public _bool = true;
 ```
@@ -38,7 +38,7 @@ bool public _bool = true;
 >- includes signed integer `int` and unsigned integer `uint`. 
 >- maximum size: `256-bit`
 
-```sol
+```solidity
 // Integer 
 int public _int = -1; // integers including negative numbers
 uint public _uint = 1; // non-negative numbers
@@ -53,7 +53,7 @@ uint256 public _number = 20220330; // 256-bit positive integers
 
 >represent Ethereum addresses
 
-```sol
+```solidity
 address public ownerAddress; 
 address payable public beneficiaryAddress;
 ```
@@ -68,7 +68,7 @@ address payable public beneficiaryAddress;
 >- `Fixed-length byte arrays`: belong to *value types*, has elements of size `bytes1`, `bytes8`, `bytes32`, etc, (maximum 32 bytes)
 >- `Variable-length byte arrays`: belong to *reference type*
 
-```sol
+```solidity
 // Fixed-size byte arrays 
 bytes32 public _byte32 = "Solidity"; 
 bytes1 public _byte = _byte32[0];
@@ -78,14 +78,14 @@ bytes1 public _byte = _byte32[0];
 
 >a user-defined data type
 
-```sol
+```solidity
 // Let uint 0, 1, 2 represent Buy, Hold, Sell 
 enum ActionSet { Buy, Hold, Sell }
 // Create an enum variable called action ActionSet action = ActionSet.Buy;
 ```
 
 It can be converted to `uint` easily: 
-```sol
+```solidity
 // Enum can be converted into uint 
 function enumToUint() external view returns(uint){
 	return uint(action); 
@@ -107,7 +107,7 @@ function enumToUint() external view returns(uint){
 
 - `fixed-sized arrays`:  Array's length is specified at the time of declaration.
     **Syntax**: `T[k]`
-	```sol
+	```solidity
 	// fixed-length array 
 	uint[8] array1; 
 	byte[5] array2; 
@@ -117,7 +117,7 @@ function enumToUint() external view returns(uint){
 - `Dynamically-sized array(dynamic array)`: Array's length is NOT specified at the time of declaration.
   
   **Syntax**: `T[]`
-	```sol
+	```solidity
 	// variable-length array 
 	uint[] array4; 
 	byte[] array5; 
@@ -130,7 +130,7 @@ function enumToUint() external view returns(uint){
 >- elements are of primitive/value types or reference types
 >- can be the element for array or mapping
 
-```sol
+```solidity
 //struct
 struct Student{ 
 	uint256 id; 
@@ -147,11 +147,11 @@ Student student; // Declare a student structure
 >map a Value to its corresponding Key. Used for querying
 
 **Syntax**
-```sol
+```solidity
 mapping(_KeyType => _ValueType)
 ```
 
-```sol
+```solidity
 // id maps to address 
 mapping(uint => address) public idToAddress;
 
@@ -189,7 +189,7 @@ mapping(address => address) public swapPair;
 
 ### `if/else`
 
-```sol
+```solidity
 function ifElseTest(uint256 _number) public pure returns(bool){ 
 	if(_number == 0){ 
 		return(true); 
@@ -201,7 +201,7 @@ function ifElseTest(uint256 _number) public pure returns(bool){
 
 ### `for` loop
 
-```sol
+```solidity
 function forLoopTest() public pure returns(uint256){ 
 	uint sum = 0; 
 	for(uint i = 0; i < 10; i++){ 
@@ -212,7 +212,7 @@ function forLoopTest() public pure returns(uint256){
 
 ### `while` loop
 
-```sol
+```solidity
 function whileTest() public pure returns(uint256){ 
 	uint sum = 0; 
 	uint i = 0; 
@@ -224,7 +224,7 @@ function whileTest() public pure returns(uint256){
 
 ### `do-while` loop
 
-```sol
+```solidity
 function doWhileTest() public pure returns(uint256){ 
 	uint sum = 0; 
 	uint i = 0; 
@@ -243,7 +243,7 @@ function doWhileTest() public pure returns(uint256){
 ### Declaration
 
 **Syntax**
-```sol
+```solidity
 function <function name>(parameters [optional]) [internal|external] [pure|view|payable] [returns (<return types>)]
 ```
 
@@ -260,7 +260,7 @@ function <function name>(parameters [optional]) [internal|external] [pure|view|p
 >- `returns` is added after the function name to declare variable type and variable name
 >- `return` is used in the function body and returns desired variables.
 
-```sol
+```solidity
 // returning multiple variables 
 function returnMultiple() public pure returns(uint256, bool, uint256[3] memory){ 
 	return(1, true, [uint256(1),2,5]); 
