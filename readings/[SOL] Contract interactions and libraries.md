@@ -17,7 +17,7 @@ Jump to important links:
 >- a special type of function that declares characteristics that a function possesses.
 >- primary use case is to **perform checks** before running a function, such as checking addresses, variables, balances, etc.
 
-```sol
+```solidity
 // define modifier
 modifier onlyOwner {
    require(msg.sender == owner);
@@ -42,7 +42,7 @@ function changeOwner(address _newOwner) external onlyOwner public {
 
 > Events are declared with the `event` keyword, followed by event name, then the type and name of each parameter to be recorded. 
 
-```sol
+```solidity
 // Transfer event from the ERC20 token contract
 event Transfer(address indexed from, address indexed to, uint256 value);
 ```
@@ -53,7 +53,7 @@ event Transfer(address indexed from, address indexed to, uint256 value);
 
 >use keyword `emit` followed by an event name defined before that along with parameters if applicable.
 
-```sol
+```solidity
 contract Owner {
 	address private owner;
 
@@ -89,7 +89,7 @@ contract Owner {
 
 >a mechanism where you can derive a class from another class for a hierarchy of classes that share a set of attributes and methods
 
-```sol
+```solidity
 mapping(address => uint256) public override balanceOf;
 ```
 
@@ -97,7 +97,7 @@ There are two important keywords for inheritance:
 - `virtual`: used by functions in parent contracts that are **expected to be overridden** in its child contracts.
 - `override`: used by functions in child contracts that are **expected to override** those in their parent contract.
 
-```sol
+```solidity
 contract GrandFather {
     event Log(string msg);
 	// Apply inheritance to the follwing 3 functions
@@ -138,7 +138,7 @@ contract Father is Grandfather{
 >- If a function exists in multiple inherited contracts, it must be overridden in the child contract; otherwise, an error will occur.
 >- When overriding a function that has the same name in multiple parent contracts, the override keyword should be followed by the names of all parent contracts.
 
-```sol
+```solidity
 contract Son is Grandfather, Father{
 	function hip() public virtual override(Grandfather, Father){
 		emit Log("son");
@@ -158,7 +158,7 @@ contract Son is Grandfather, Father{
 >
 >`super keyword`: used to call  a function from the immediate parent contract. 
 
-```sol
+```solidity
 function callParent() public {
 	Grandfather.pop();
 }
@@ -176,7 +176,7 @@ function callParaSuper() public{
 >- used when there's at least one unimplemented function, otherwise the contract will not compile
 >- unimplemented function needs to bel marked as `virtual`
 
-```sol
+```solidity
 pragma solidity ^0.8.0;
 
 // Define an abstract contract
@@ -218,7 +218,7 @@ contract ConcreteContract is AbstractContract {
 
 >If we know that a contract implements the IERC721 interface, we can interact with it without knowing its detailed implementation.
 
-```sol
+```solidity
 contract interactBAYC {
 	// Use BAYC address to create interface contract variables (ETH Mainnet)
 	IERC721 BAYC IERC721(0xBC4CA0EdA7647A8aB7C2061cE118A18a936f13D);
@@ -244,7 +244,7 @@ contract interactBAYC {
 > - special type of contract, designed to enhance the reusability of Solidity code and reduce gas consumption
 > - typically consist of a collection of useful functions
 
-```sol
+```solidity
 library Strings {
 	bytes16 private constant _HEX_SYMBOLS = "0123456789abcdef";
 
@@ -282,7 +282,7 @@ library Strings {
 
 >The directive 'using A for B;' is used to attach library functions (from library A) to any type (B). After the directive is added, the functions in library A are automatically added as members of the B type variable and can be called directly. ***Note: when called, this variable will be passed as the first argument to the function***
 
-```sol
+```solidity
 using Strings for uint256; function getString1(uint256 _number) public pure returns(string memory){ 
 	return _number.toHexString(); 
 }
@@ -292,7 +292,7 @@ using Strings for uint256; function getString1(uint256 _number) public pure retu
 
 >You can also call a library function directly using the name of the library contract. In this case, you would use the name of the library, followed by the function you want to call.”
 
-```sol
+```solidity
 function getString2(uint256 _number) public pure returns(string memory){ 
 	return Strings.toHexString(_number); 
 }
@@ -304,22 +304,22 @@ function getString2(uint256 _number) public pure returns(string memory){
 >Use `import` to import contracts from other source codes, making development more modular. Syntax is pretty much the same as `JS`
 
 - **import by *using the relative position* of the source file**
-	```sol
+	```solidity
 	import './father.sol';
 	```
 
 -  **import contracts *from the internet* by using the source file's URL**
-	```sol
+	```solidity
 	import 'https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/utils/Address.sol’;
 	```
 
 - **import via *the npm directory***
-	```sol
+	```solidity
 	import '@openzeppelin/contracts/access/Ownable.sol';
 	```
 
 - **import specific contracts via *global symbols*** 
-	```sol
+	```solidity
 	import {father} from './father.sol';
 	```
 
@@ -333,14 +333,14 @@ function getString2(uint256 _number) public pure returns(string memory){
 >- Custom errors are defined using the `error` statement, which can be used inside and outside of contracts.
 >- ⚠️ In functions, `error` must be used together with `revert` statement.
 
-```sol
+```solidity
 error TransferNotOwner(); // custom error revert TransferNotOwner();
 ```
 
 ### `require`
 >most commonly used method for error handling prior to solidity 0.8
 
-```sol
+```solidity
 require(condition, "error message");
 ```
 
@@ -348,7 +348,7 @@ require(condition, "error message");
 ### `assert`
 >generally used for debugging purposes
 
-```sol
+```solidity
 assert(condition);
 ```
 
@@ -359,7 +359,7 @@ assert(condition);
 >- **functions** can be overloaded only
 >- **modifiers** cannot be overloaded
 
-```sol
+```solidity
 pragma solidity ^0.8.4
 
 contract OverloadingExample {
