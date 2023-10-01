@@ -1,10 +1,10 @@
-# Main Contents
+## Main Contents
 >- [Data Types](#data-types)
 >- [Control Flow](#control-flow)
 >- [Function](#function)
 >- [Modify Contract State](#modify-contract-state)
 
-# Data Types
+## Data Types
 
 \[[← See all readings](https://github.com/COS30049/cos30049_backend/tree/main/readings/README.md)\]
 
@@ -12,7 +12,7 @@
 >2. [Reference Types](#reference-types)
 >3. [Mapping Type](#mapping-type)
 
-## Value Types
+### Value Types
 
 >1. [boolean](#boolean) 
 >2. [integers](#integers) 
@@ -20,7 +20,7 @@
 >4. [fixed-size byte arrays](#fixed-size-byte-arrays) 
 >5. [enumeration/enum](#enumerationenum)
 
-### Boolean
+#### Boolean
 
 ```sol
 // Boolean 
@@ -33,7 +33,7 @@ bool public _bool = true;
 - `==` (equality) 
 - `!=` (inequality)
 
-### Integers
+#### Integers
 
 >- includes signed integer `int` and unsigned integer `uint`. 
 >- maximum size: `256-bit`
@@ -47,7 +47,7 @@ int public _int = -1; // integers including negative numbers uint public _uint =
   `<=`, `<`,` ==`, `!=`, `>=`, `>`
 - *Arithmetic* operator： 
   `+`, `-`, `*`, `/`, `%` (modulo), `**` (exponent)
-### Addresses
+#### Addresses
 
 >represent Ethereum addresses
 
@@ -61,7 +61,7 @@ address payable public beneficiaryAddress;
 - Hold ether(ETH)
 - Smart Contracts and Externally Owned: Addresses can represent either a smart contract or an externally owned account (EOA).
 
-### Fixed-size byte arrays
+#### Fixed-size byte arrays
 
 >- `Fixed-length byte arrays`: belong to *value types*, has elements of size `bytes1`, `bytes8`, `bytes32`, etc, (maximum 32 bytes)
 >- `Variable-length byte arrays`: belong to *reference type*
@@ -72,7 +72,7 @@ bytes32 public _byte32 = "Solidity";
 bytes1 public _byte = _byte32[0];
 ```
 
-### Enumeration/Enum
+#### Enumeration/Enum
 
 >a user-defined data type
 
@@ -92,14 +92,14 @@ function enumToUint() external view returns(uint){
 
 `NOTE`: `enum` is a less popular type in Solidity.
 
-## Reference Types
+### Reference Types
 
 \[[back to top ↑](#main-contents)\]
 
 >1. [Array](#array)
 >2. [Struct](#struct)
 
-### Array
+#### Array
 
 >a variable type commonly used in Solidity to store a set of data (integers, bytes, addresses, etc.)
 
@@ -122,7 +122,7 @@ function enumToUint() external view returns(uint){
 	address[] array6; 
 	bytes array7;
 	```
-### Struct
+#### Struct
 
 >- used to define new types
 >- elements are of primitive/value types or reference types
@@ -138,7 +138,7 @@ struct Student{
 Student student; // Declare a student structure
 ```
 
-## Mapping Type
+### Mapping Type
 
 \[[back to top ↑](#main-contents)\]
 
@@ -157,7 +157,7 @@ mapping(uint => address) public idToAddress;
 mapping(address => address) public swapPair; 
 ```
 
-# Data Storage
+## Data Storage
 
 \[[back to top ↑](#main-contents)\]
 
@@ -176,7 +176,7 @@ mapping(address => address) public swapPair;
 	- cannot be modified and is temporary
 	- consumes less *gas*
 
-# Control Flow
+## Control Flow
 
 \[[back to top ↑](#main-contents)\] \[[← See all readings](https://github.com/COS30049/cos30049_backend/tree/main/readings/README.md)\]
 
@@ -185,7 +185,7 @@ mapping(address => address) public swapPair;
 >3. [`while` loop](#while-loop)
 >4. [`do-while` loop](#do-while-loop)
 
-## `if/else`
+### `if/else`
 
 ```sol
 function ifElseTest(uint256 _number) public pure returns(bool){ 
@@ -197,7 +197,7 @@ function ifElseTest(uint256 _number) public pure returns(bool){
 }
 ```
 
-## `for` loop
+### `for` loop
 
 ```sol
 function forLoopTest() public pure returns(uint256){ 
@@ -208,7 +208,7 @@ function forLoopTest() public pure returns(uint256){
 }
 ```
 
-## `while` loop
+### `while` loop
 
 ```sol
 function whileTest() public pure returns(uint256){ 
@@ -220,7 +220,7 @@ function whileTest() public pure returns(uint256){
 	return(sum); }
 ```
 
-## `do-while` loop
+### `do-while` loop
 
 ```sol
 function doWhileTest() public pure returns(uint256){ 
@@ -234,11 +234,11 @@ function doWhileTest() public pure returns(uint256){
 }
 ```
 
-# Function
+## Function
 
 \[[back to top ↑](#main-contents)\] \[[← See all readings](https://github.com/COS30049/cos30049_backend/tree/main/readings/README.md)\]
 
-## Declaration
+### Declaration
 
 **Syntax**
 ```sol
@@ -253,7 +253,7 @@ function <function name>(parameters [optional]) [internal|external] [pure|view|p
 - `pure|view|payable`: keywords that dictate a Solidity functions behaviour.
 	- `pure`: cannot read nor write state variables on-chain
 	- `view`: cannot write but can read state variables on-chain
-## Output
+### Output
  
 >- `returns` is added after the function name to declare variable type and variable name
 >- `return` is used in the function body and returns desired variables.
@@ -265,7 +265,7 @@ function returnMultiple() public pure returns(uint256, bool, uint256[3] memory){
 }
 ```
 
-# Modify Contract State
+## Modify Contract State
 
 \[[back to top ↑](#main-contents)\] \[[← See all readings](https://github.com/COS30049/cos30049_backend/tree/main/readings/README.md)\]
 
