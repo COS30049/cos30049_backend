@@ -20,8 +20,8 @@ Jump to important links:
 ```solidity
 // define modifier
 modifier onlyOwner {
-   require(msg.sender == owner);
-   _;
+	require(msg.sender == owner);
+	_;
 }
 
 function changeOwner(address _newOwner) external onlyOwner public {
