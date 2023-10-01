@@ -40,7 +40,9 @@ bool public _bool = true;
 
 ```sol
 // Integer 
-int public _int = -1; // integers including negative numbers uint public _uint = 1; // non-negative numbers uint256 public uint256 public _number = 20220330; // 256-bit positive integers
+int public _int = -1; // integers including negative numbers
+uint public _uint = 1; // non-negative numbers
+uint256 public _number = 20220330; // 256-bit positive integers
 ```
 **Commonly used operators**
 - *Inequality* operator (which returns a Boolean): 
