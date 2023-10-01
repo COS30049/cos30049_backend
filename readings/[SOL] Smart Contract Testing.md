@@ -83,7 +83,7 @@ truffle init
 ```
 
 This will create a project with the following directory structure
-```bash
+```txt
 .
 ├── contracts
 ├── migrations
@@ -104,7 +104,7 @@ This will create a project with the following directory structure
 #### Example
 
 ##### Project Directory
-```bash
+```txt
 .
 ├── contracts
 │	└── SimpleStorage.sol
@@ -183,7 +183,7 @@ contract('SimpleStorage', (accounts) => {
 
 	You will see something like this
 	
-	```bash
+	```txt
 	Truffle Develop started at http://127.0.0.1:9545/
 	
 	Accounts:
@@ -204,7 +204,7 @@ contract('SimpleStorage', (accounts) => {
 
 	You will see something like this
 	
-	```bash
+	```txt
 	Using network 'develop'.
 	
 	Compiling your contracts...
