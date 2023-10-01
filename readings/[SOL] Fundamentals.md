@@ -206,7 +206,8 @@ function forLoopTest() public pure returns(uint256){
 	uint sum = 0; 
 	for(uint i = 0; i < 10; i++){ 
 		sum += i;
-	} return(sum); 
+	}
+	return(sum); 
 }
 ```
 
@@ -219,7 +220,8 @@ function whileTest() public pure returns(uint256){
 	while(i < 10){ 
 		sum += i; i++; 
 	} 
-	return(sum); }
+	return(sum);
+}
 ```
 
 ### `do-while` loop
