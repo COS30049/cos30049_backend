@@ -334,7 +334,8 @@ function getString2(uint256 _number) public pure returns(string memory){
 >- ⚠️ In functions, `error` must be used together with `revert` statement.
 
 ```solidity
-error TransferNotOwner(); // custom error revert TransferNotOwner();
+error TransferNotOwner(); // custom error
+revert TransferNotOwner();
 ```
 
 ### `require`
