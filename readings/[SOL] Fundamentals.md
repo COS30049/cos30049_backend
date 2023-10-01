@@ -253,7 +253,7 @@ function <function name>(parameters [optional]) [internal|external] [pure|view|p
 	- `external`: Called from other contracts only. Within the contract called by `this.externalFunction()`, where `externalFunction` is the local function name marked with `external` specifier
 	- `public`: Visible to all, default
 	- `internal`: Accessed by internal and derived contract only. Same as `protected` in C++
-	- `private`: Internally accessed only.
+	- `private`: Internal access only.
 - `pure|view|payable`: keywords that dictate a Solidity functions behaviour.
 	- `pure`: cannot read nor write state variables on-chain
 	- `view`: cannot write but can read state variables on-chain
