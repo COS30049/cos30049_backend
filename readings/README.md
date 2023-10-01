@@ -10,7 +10,7 @@
 
 ### Testing
 - **ref**: [`Week 7`](https://swinburne.instructure.com/courses/52786/pages/week-7?module_item_id=3673697) - [`Slides`](https://swinburne.instructure.com/courses/52786/files/26671054) [`⭳`](https://swinburne.instructure.com/courses/52786/files/26671054/download?download_frd=1)
-- **contents**:
+- **contents**: [`Solidity Testing`](https://github.com/COS30049/cos30049_backend/blob/main/readings/%5BSOL%5D%20Smart%20Contract%20Testing.md#solidity-testing) | [`Testing Frameworks`](https://github.com/COS30049/cos30049_backend/blob/main/readings/%5BSOL%5D%20Smart%20Contract%20Testing.md#testing-frameworks) | [`Ganache`](https://github.com/COS30049/cos30049_backend/blob/main/readings/%5BSOL%5D%20Smart%20Contract%20Testing.md#ganache)
 
 ### Audit & Security
 - **ref**: [`Week 8`](https://swinburne.instructure.com/courses/52786/pages/week-8?module_item_id=3673703) - [`Slides`](https://swinburne.instructure.com/courses/52786/files/27022396) [`⭳`](https://swinburne.instructure.com/courses/52786/files/27022396/download?download_frd=1)
