@@ -1,5 +1,16 @@
+## Main Contents
+1. [Modifiers](#modifiers)
+2. [Events](#events)
+3. [Inheritance](#inheritance)
+4. [Libraries](#libraries)
+5. [Import](#import)
+6. [Error handling](#error-handling)
+7. [Overloading](#overloading)
+
 
 ## Modifiers
+
+\[[back to top ↑](#main-contents)\]
 
 >- a special type of function that declares characteristics that a function possesses.
 >- primary use case is to **perform checks** before running a function, such as checking addresses, variables, balances, etc.
@@ -15,13 +26,15 @@ function changeOwner(address _newOwner) external onlyOwner public {
        owner = _newOwner;
    }
 ```
->**`Explanation`**
+>**Explanation**
 >
 >The `onlyOwner` modifier has no parameters and includes a `require` statement that checks that the message sender is the contract owner.
 >
 >If the message sender is the contract owner, the function will be executed. If the message sender is not the contract owner, the function will not execute.
 
 ## Events
+
+\[[back to top ↑](#main-contents)\]
 
 ### Declaration
 
@@ -70,6 +83,8 @@ contract Owner {
 
 ## Inheritance
 
+\[[back to top ↑](#main-contents)\]
+
 >a mechanism where you can derive a class from another class for a hierarchy of classes that share a set of attributes and methods
 
 ```sol
@@ -115,6 +130,8 @@ contract Father is Grandfather{
 
 ### Multiple Inheritance
 
+\[[back to top ↑](#main-contents)\]
+
 >- When inheriting, you should follow the order from **highest to lowest seniority**.
 >- If a function exists in multiple inherited contracts, it must be overridden in the child contract; otherwise, an error will occur.
 >- When overriding a function that has the same name in multiple parent contracts, the override keyword should be followed by the names of all parent contracts.
@@ -133,6 +150,8 @@ contract Son is Grandfather, Father{
 
 ### Call from Parent Contracts
 
+\[[back to top ↑](#main-contents)\]
+
 >`Direct invocation`: directly call a function from a parent contract using the syntax `ParentContractName.functionName()`.
 >
 >`super keyword`: used to call  a function from the immediate parent contract. 
@@ -149,6 +168,8 @@ function callParaSuper() public{
 ```
 
 ### Abstract
+
+\[[back to top ↑](#main-contents)\]
 
 >- used when there's at least one unimplemented function, otherwise the contract will not compile
 >- unimplemented function needs to bel marked as `virtual`
@@ -174,6 +195,8 @@ contract ConcreteContract is AbstractContract {
 ```
 
 ### Interface
+
+\[[back to top ↑](#main-contents)\]
 
 >- `semantics`: a skeleton of smart contracts that defines what the contract does and how to interact with them
 >- `syntax`: similar to abstract contract but requires no function implementations.
@@ -214,6 +237,8 @@ contract interactBAYC {
 
 ## Libraries
 
+\[[back to top ↑](#main-contents)\]
+
 > - special type of contract, designed to enhance the reusability of Solidity code and reduce gas consumption
 > - typically consist of a collection of useful functions
 
@@ -249,6 +274,8 @@ library Strings {
 
 ### How to Use
 
+\[[back to top ↑](#main-contents)\]
+
 #### Using the `using for` directive
 
 >The directive 'using A for B;' is used to attach library functions (from library A) to any type (B). After the directive is added, the functions in library A are automatically added as members of the B type variable and can be called directly. ***Note: when called, this variable will be passed as the first argument to the function***
@@ -269,6 +296,8 @@ function getString2(uint256 _number) public pure returns(string memory){
 }
 ```
 ## Import
+
+\[[back to top ↑](#main-contents)\]
 
 >Use `import` to import contracts from other source codes, making development more modular. Syntax is pretty much the same as `JS`
 
@@ -293,6 +322,8 @@ function getString2(uint256 _number) public pure returns(string memory){
 	```
 
 ## Error Handling
+
+\[[back to top ↑](#main-contents)\]
 
 ### `error`
 >- a new feature in solidity 0.8 that saves gas and informs users why the operation failed
@@ -320,6 +351,8 @@ assert(condition);
 ```
 
 ## Overloading
+
+\[[back to top ↑](#main-contents)\]
 
 >- **functions** can be overloaded only
 >- **modifiers** cannot be overloaded
