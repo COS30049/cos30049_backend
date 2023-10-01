@@ -8,7 +8,7 @@
 7. [Overloading](#overloading)
 
 Jump to important links:
-1. [ERC](#see-ethereum-request-for-comment-erc)
+1. [ERC](#see-ethereum-request-for-comment-erc-)
 
 ## Modifiers
 
@@ -235,7 +235,7 @@ contract interactBAYC {
 }
 ```
 >The Bored Ape Yacht Club BAYC is an ERC721 NFT, which implements all functions in the IERC721 interface. We can interact with the BAYC contract with the IERC721 interface and its contract address, without knowing its source code. For example, we can use `balanceOf()` to query the BAYC balance of an address, or use `safeTransferFrom()` to transfer a BAYC NFT.
-#### See [Ethereum request for comment (ERC)](https://eips.ethereum.org/erc) \[↑](#main-contents)\]
+#### See [Ethereum request for comment (ERC)](https://eips.ethereum.org/erc) [\[↑\]](#main-contents)
 
 ## Libraries 
 
