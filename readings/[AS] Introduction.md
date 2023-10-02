@@ -213,4 +213,4 @@ contract Attack {
 | Source | Link |
 | -------- | ----- |
 |`Ethereum Docs`| [Ethereum Developer Resources](https://ethereum.org/en/developers/)|
-|`solidityidity Docs`| [Introduction to Smart Contracts — Solidity 0.8.22 documentation (soliditylang.org)](https://docs.soliditylang.org/en/latest/introduction-to-smart-contracts.html)|
+|`solidityidity Docs`| [Introduction to Smart Contracts — Solidity 0.8.22 documentation](https://docs.soliditylang.org/en/latest/introduction-to-smart-contracts.html)|
