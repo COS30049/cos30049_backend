@@ -6,7 +6,7 @@
 
 ## Data Types
 
-\[[← See all readings](https://github.com/COS30049/cos30049_backend/tree/main/readings/README.md)\]
+\[[← See all readings](../README.md)\]
 
 >1. [Value Types](#value-types)
 >2. [Reference Types](#reference-types)
