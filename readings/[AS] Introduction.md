@@ -184,7 +184,15 @@ contract RandomContract  {
 	}
 }
 ```
-
+<pre>
+        ▲  
+        |
+   ┌────┴─────┐
+   |  Attack  |
+   └────┬─────┘
+        |
+        |
+</pre> 
 ```solidity
 interface IRandomContract {
 	function nFunction();
