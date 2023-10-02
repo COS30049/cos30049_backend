@@ -20,4 +20,4 @@
 
 ### Vulnerabilities
 - **ref**: [`Week 9`](https://swinburne.instructure.com/courses/52786/pages/week-9?module_item_id=3673701) - [`Slides`](https://swinburne.instructure.com/courses/52786/files/27387408) [`⭳`](https://swinburne.instructure.com/courses/52786/files/27387408/download?download_frd=1)
-- **contents**:
+- **contents**: [`Smart Contracts`](https://github.com/COS30049/cos30049_backend/edit/main/readings/Lecture%208.md#smart-contract) | [`Auditing`](https://github.com/COS30049/cos30049_backend/edit/main/readings/Lecture%208.md#auditing) | [`Security`](https://github.com/COS30049/cos30049_backend/edit/main/readings/Lecture%208.md#security) | [`Getting Started`](https://github.com/COS30049/cos30049_backend/edit/main/readings/Lecture%208.md#getting-started) 
