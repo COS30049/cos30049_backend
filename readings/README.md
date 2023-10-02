@@ -3,7 +3,7 @@
 
 ***
 
-<details open>
+<details>
 	<summary><h2> <img src="https://github.com/COS30049/cos30049_backend/assets/139601671/8b9a1bf7-a9f1-4994-94ac-b544f3011b9f"> Solidity [SOL]</h2></summary>
 
 ### [`Read 📖`](src/%5BSOL%5D%20Fundamentals.md) Fundamentals
@@ -19,7 +19,7 @@
 - **contents**: [`Solidity Testing`](src/%5BSOL%5D%20Smart%20Contract%20Testing.md#solidity-testing) | [`Testing Frameworks`](src/%5BSOL%5D%20Smart%20Contract%20Testing.md#testing-frameworks) | [`Ganache`](src/%5BSOL%5D%20Smart%20Contract%20Testing.md#ganache)
 </details>
 
-<details>
+<details open>
 <summary><h2> <img src="https://github.com/COS30049/cos30049_backend/assets/139601671/215e3f52-c0e1-4ace-be96-44b29658cd2e"> Audit & Security [AS]</h2></summary>
 
 ### [`Read 📖`](src/%5BAS%5D%20Introduction.md) Introduction
