@@ -331,7 +331,7 @@ function getString2(uint256 _number) public pure returns(string memory){
 >- a new feature in solidity 0.8 that saves gas and informs users why the operation failed
 >- recommended way to throw error in solidity
 >- Custom errors are defined using the `error` statement, which can be used inside and outside of contracts.
->- ⚠️ In functions, `error` must be used together with `revert` statement.
+>- ❕In functions, `error` must be used together with `revert` statement.
 
 ```solidity
 error TransferNotOwner(); // custom error
