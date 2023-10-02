@@ -7,7 +7,7 @@
 
 ## Smart Contract
 
-\[[← See all readings](https://github.com/COS30049/cos30049_backend/tree/main/readings/README.md)\]
+\[[← See all readings](../README.md)\]
 
 >- essential to many blockchain-based ecosystems, especially application-focused blockchains like `Ethereum`
 >- characteristics: autonomous, decentralised, transparent and immutable (irreversible and unmodifiable once deployed)
@@ -23,7 +23,7 @@
 
 ## Auditing
 
-\[[back to top ↑](#main-contents)\] \[[← See all readings](https://github.com/COS30049/cos30049_backend/tree/main/readings/README.md)\]
+\[[back to top ↑](#main-contents)\] \[[← See all readings](../README.md)\]
 
  **It’s essential to perform smart contract audit**
 >- Most smart contract security measures take place during the development process.
@@ -65,7 +65,7 @@ See **[slides](https://swinburne.instructure.com/courses/52786/files/27022396) |
 
 ## Security
 
-\[[back to top ↑](#main-contents)\] \[[← See all readings](https://github.com/COS30049/cos30049_backend/tree/main/readings/README.md)\]
+\[[back to top ↑](#main-contents)\] \[[← See all readings](../README.md)\]
 
 > **Security and consistency are critical** due to 
 > - smart contracts' authority to **allocate high-value resources** between complicated systems
@@ -171,7 +171,7 @@ contract Attack {
 
 \[[back to top ↑](#main-contents)\]
 
-See [Lecture 5, function visibility specifiers](https://github.com/COS30049/cos30049_backend/blob/main/readings/src/%5BSOL%5D%20Fundamentals.md#function).
+See [Lecture 5, function visibility specifiers](%5BSOL%5D%20Fundamentals.md#function).
 
 - When the visibility is not specified, the **default visibility of a function is `public`**. 
 - Public function can be accessed **by all parties**. This can lead to a vulnerability if a developer **forgot to set the visibility** and a malicious user is able to make unauthorized or unintended state changes.
@@ -208,7 +208,7 @@ contract Attack {
 
 ## Getting Started
 
-\[[back to top ↑](#main-contents)\] \[[← See all readings](https://github.com/COS30049/cos30049_backend/tree/main/readings/README.md)\]
+\[[back to top ↑](#main-contents)\] \[[← See all readings](../README.md)\]
 
 | Source | Link |
 | -------- | ----- |
