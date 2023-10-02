@@ -1,4 +1,4 @@
-## ![image](https://github.com/COS30049/cos30049_backend/assets/139601671/77e5ef88-a5e0-4197-af6d-4ee8d37d5a36)	&nbsp; SOLIDITY \[SOL\]
+## ![image](https://github.com/COS30049/cos30049_backend/assets/139601671/614d87a1-c43e-481c-a0b6-5b1a694d6ffb) &nbsp;SOLIDITY \[SOL\]
 
 ### Fundamentals
 - **ref**: [`Week 5`](https://swinburne.instructure.com/courses/52786/modules/items/3673698) - [`Slides`](https://swinburne.instructure.com/courses/52786/files/26313982) [`⭳`](https://swinburne.instructure.com/courses/52786/files/26313982/download?download_frd=1)
@@ -12,7 +12,7 @@
 - **ref**: [`Week 7`](https://swinburne.instructure.com/courses/52786/pages/week-7?module_item_id=3673697) - [`Slides`](https://swinburne.instructure.com/courses/52786/files/26671054) [`⭳`](https://swinburne.instructure.com/courses/52786/files/26671054/download?download_frd=1)
 - **contents**: [`Solidity Testing`](https://github.com/COS30049/cos30049_backend/blob/main/readings/%5BSOL%5D%20Smart%20Contract%20Testing.md#solidity-testing) | [`Testing Frameworks`](https://github.com/COS30049/cos30049_backend/blob/main/readings/%5BSOL%5D%20Smart%20Contract%20Testing.md#testing-frameworks) | [`Ganache`](https://github.com/COS30049/cos30049_backend/blob/main/readings/%5BSOL%5D%20Smart%20Contract%20Testing.md#ganache)
 
-## Audit & Security \[AS\]
+## ![security](https://github.com/COS30049/cos30049_backend/assets/139601671/97c8ebc2-f4b0-437d-9084-b9b1aae75e59) Audit & Security \[AS\]
 
 ### Introduction
 - **ref**: [`Week 8`](https://swinburne.instructure.com/courses/52786/pages/week-8?module_item_id=3673703) - [`Slides`](https://swinburne.instructure.com/courses/52786/files/27022396) [`⭳`](https://swinburne.instructure.com/courses/52786/files/27022396/download?download_frd=1)
