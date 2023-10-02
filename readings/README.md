@@ -1,4 +1,4 @@
-## SOLIDITY \[SOL\]
+## ![image](https://github.com/COS30049/cos30049_backend/assets/139601671/77e5ef88-a5e0-4197-af6d-4ee8d37d5a36)	&nbsp; SOLIDITY \[SOL\]
 
 ### Fundamentals
 - **ref**: [`Week 5`](https://swinburne.instructure.com/courses/52786/modules/items/3673698) - [`Slides`](https://swinburne.instructure.com/courses/52786/files/26313982) [`⭳`](https://swinburne.instructure.com/courses/52786/files/26313982/download?download_frd=1)
