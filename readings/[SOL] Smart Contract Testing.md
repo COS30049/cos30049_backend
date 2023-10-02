@@ -232,4 +232,4 @@ Your test should now run, and if everything is set up correctly, it should pass.
 - **Conveniently fork** (branch) an existing blockchain network (without waiting for block synchronization) 
 - **Simulate any account** (you can simulate the use of any user's token in the environment without a private key).
 
-### Usage: see [slides](https://github.com/COS30049/cos30049_backend/blob/main/readings/README.md#testing) | [⭳](https://swinburne.instructure.com/courses/52786/files/26671054/download?download_frd=1) (p.17~)
+### Usage: see [slides](https://swinburne.instructure.com/courses/52786/files/26671054) | [⭳](https://swinburne.instructure.com/courses/52786/files/26671054/download?download_frd=1) (p.17~)
