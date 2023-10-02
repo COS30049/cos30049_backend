@@ -1,10 +1,13 @@
----
-title: Week 8 - Introduction of smart contract audit & security
-tags:
-  - COS30049/lectures
-  - security
----
+## Main Contents
+
+1. [Smart Contract](#smart-contract)
+2. [Auditing](#auditing)
+3. [Security](#security)
+4. [Getting Started](#getting-started)
+
 ## Smart Contract
+
+\[[← See all readings](https://github.com/COS30049/cos30049_backend/tree/main/readings/README.md)\]
 
 >- essential to many blockchain-based ecosystems, especially application-focused blockchains like `Ethereum`
 >- characteristics: autonomous, decentralised, transparent and immutable (irreversible and unmodifiable once deployed)
@@ -17,7 +20,10 @@ tags:
 - Financial Data Recording
 - Supply Chain Management
 - Insurance
+
 ## Auditing
+
+\[[back to top ↑](#main-contents)\] \[[← See all readings](https://github.com/COS30049/cos30049_backend/tree/main/readings/README.md)\]
 
  **It’s essential to perform smart contract audit**
 >- Most smart contract security measures take place during the development process.
@@ -29,7 +35,7 @@ tags:
 >The process focuses on **scrutiny of the code** used for **underwriting the T&C** in the smart contract
   => helps **identify the vulnerabilities** and bugs before the deployment of smart contracts
 
-### Benefit 
+### Benefits 
 
 - Better optimization of the code 
 - Improved performance of smart contracts 
@@ -37,6 +43,8 @@ tags:
 - Security against hacking attacks
 
 ### Auditors' Responsibilities
+
+\[[back to top ↑](#main-contents)\]
 
 1. **Collecting Code Specifications**
    >The **evaluation of project documentation** could help in developing a **comprehensive understanding** of the project.
@@ -53,9 +61,11 @@ tags:
 
 ### How to Become a Smart Contract Security Auditor
 
-See Slides (p.15 - 17)
+See **[slides](https://swinburne.instructure.com/courses/52786/files/27022396) | [⭳](https://swinburne.instructure.com/courses/52786/files/27022396/download?download_frd=1)** (p.15 - 17)
 
 ## Security
+
+\[[back to top ↑](#main-contents)\] \[[← See all readings](https://github.com/COS30049/cos30049_backend/tree/main/readings/README.md)\]
 
 > **Security and consistency are critical** due to 
 > - smart contracts' authority to **allocate high-value resources** between complicated systems
@@ -70,9 +80,11 @@ See Slides (p.15 - 17)
 
 ### Integer Overflow
 
+\[[back to top ↑](#main-contents)\]
+
 >When a single numerical computation is performed, the output **exceeds the maximum** that a register or memory can store or represent.
 
-- In `Solidity`, `uint8` is used to store `unsigned integers` that is **8 bits long**. Therefore, in binary it can hold value ranging from 
+- In `solidityidity`, `uint8` is used to store `unsigned integers` that is **8 bits long**. Therefore, in binary it can hold value ranging from 
    ```
    00000000 ~ 11111111
    ```
@@ -86,7 +98,7 @@ See Slides (p.15 - 17)
 
 **Contract time table**: allows users to deposit funds but requires a minimum wait of 1 week to withdraw. Additionally, the lock time can be increased by calling `increaseLockTime()`
 
-```sol
+```solidity
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.7.6;
 
@@ -115,13 +127,15 @@ contract TimeLock {
 	} 
 }
 ```
->⚠️ **Issue**
+>⚠ **Issue**
 >
 >- `uint` or `uint256` can hold values with the length of 256 bits.
 >- Initially, `lockTime > 1 weeks`; however, on the "line of issue", the `lockTime` may exceed the maximum number which can be represented by 256-bit string (decimal: 0 ~ 2^256-1).
 >- As a result, the contract then fails to maintaining the waiting time.
 
 ### Integer Underflow
+
+\[[back to top ↑](#main-contents)\]
 
 >Underflow occurs when the computation result is **less than the minimum capacity** of the register or memory to store or represent.
 
@@ -131,7 +145,7 @@ contract TimeLock {
    ```
    This subtraction is evaluated to `11111111` or 256 in decimal; however, -1 is expected. This is an **integer underflow** because, simply, the calculation evaluates to a value that is **less than the minimum value** `uint8` can store, 0.
 
-```sol
+```solidity
 contract Attack {
 	TimeLock timeLock;
 	
@@ -155,13 +169,15 @@ contract Attack {
 
 ### Function Default Visibility
 
-See [[Lecture 5#Function|function visibility specifiers]]
+\[[back to top ↑](#main-contents)\]
+
+See [Lecture 5, function visibility specifiers](https://github.com/COS30049/cos30049_backend/blob/main/readings/%5BSOL%5D%20Fundamentals.md#function).
 
 - When the visibility is not specified, the **default visibility of a function is `public`**. 
 - Public function can be accessed **by all parties**. This can lead to a vulnerability if a developer **forgot to set the visibility** and a malicious user is able to make unauthorized or unintended state changes.
 
 
-```sol
+```solidity
 contract RandomContract  {
 	function nFunction() {
 		// perform a task
@@ -169,7 +185,7 @@ contract RandomContract  {
 }
 ```
 
-```sol
+```solidity
 interface IRandomContract {
 	function nFunction();
 }
@@ -182,9 +198,11 @@ contract Attack {
 }
 ```
 
-## Getting started
+## Getting Started
 
-| Provider | Links |
+\[[back to top ↑](#main-contents)\] \[[← See all readings](https://github.com/COS30049/cos30049_backend/tree/main/readings/README.md)\]
+
+| Source | Link |
 | -------- | ----- |
 |`Ethereum Docs`| [Ethereum Developer Resources](https://ethereum.org/en/developers/)|
-|`Solidity Docs`| [Introduction to Smart Contracts — Solidity 0.8.22 documentation (soliditylang.org)](https://docs.soliditylang.org/en/latest/introduction-to-smart-contracts.html)|
+|`solidityidity Docs`| [Introduction to Smart Contracts — Solidity 0.8.22 documentation (soliditylang.org)](https://docs.soliditylang.org/en/latest/introduction-to-smart-contracts.html)|
