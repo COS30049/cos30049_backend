@@ -3,6 +3,7 @@
 
 ***
 
+[`Smart Contracts`](src/%5BAS%5D%20Introduction.md#smart-contract)
 <details open>
 	<summary><h2> <img src="https://github.com/COS30049/cos30049_backend/assets/139601671/8b9a1bf7-a9f1-4994-94ac-b544f3011b9f"> Solidity [SOL]</h2></summary>
 
