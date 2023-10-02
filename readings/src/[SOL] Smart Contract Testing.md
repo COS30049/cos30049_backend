@@ -5,7 +5,7 @@
 
 ## Solidity Testing
 
-\[[← See all readings](https://github.com/COS30049/cos30049_backend/tree/main/readings/README.md)\]
+\[[← See all readings](../README.md)\]
 
 > Testing involves checking the correctness, security, and performance of smart contracts
 
@@ -61,7 +61,7 @@ it("should correctly calculate the sum after setting numbers", async () => {
 
 ## Testing Frameworks
 
-\[[back to top ↑](#main-contents)\] \[[← See all readings](https://github.com/COS30049/cos30049_backend/tree/main/readings/README.md)\]
+\[[back to top ↑](#main-contents)\] \[[← See all readings](../README.md)\]
 
 >- provide a set of tools and practices designed to help developers test their contracts more effectively.
 >- most widely used testing frameworks for Solidity are **Truffle**, **Hardhat**, **Waffle**, and **Remix**
@@ -223,7 +223,7 @@ Your test should now run, and if everything is set up correctly, it should pass.
 
 ## Ganache
 
-\[[back to top ↑](#main-contents)\] \[[← See all readings](https://github.com/COS30049/cos30049_backend/tree/main/readings/README.md)\]
+\[[back to top ↑](#main-contents)\] \[[← See all readings](../README.md)\]
 
 > simply an Ethereum blockchain simulator
 
