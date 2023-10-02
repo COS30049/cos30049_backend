@@ -4,7 +4,7 @@
 ***
 
 <details open>
-	<summary><h2> <img src="https://github.com/COS30049/cos30049_backend/assets/139601671/8b9a1bf7-a9f1-4994-94ac-b544f3011b9f"> Solidity [SOL]</h2></summary>
+	<summary><h2> <img src="src/assets/images/soldity-sectionIco.png"alt="soldity-sectionIco"> Solidity [SOL]</h2></summary>
 
 ### [`Read 📖`](src/%5BSOL%5D%20Fundamentals.md) Fundamentals
 - **ref**: [`Week 5`](https://swinburne.instructure.com/courses/52786/modules/items/3673698) - [`Slides`](https://swinburne.instructure.com/courses/52786/files/26313982) [`⭳`](https://swinburne.instructure.com/courses/52786/files/26313982/download?download_frd=1)
@@ -20,7 +20,7 @@
 </details>
 
 <details>
-<summary><h2> <img src="https://github.com/COS30049/cos30049_backend/assets/139601671/215e3f52-c0e1-4ace-be96-44b29658cd2e"> Audit & Security [AS]</h2></summary>
+<summary><h2> <img src="src/assets/images/security-sectionIco.png" alt="security-sectionIco"> Audit & Security [AS]</h2></summary>
 
 ### [`Read 📖`](src/%5BAS%5D%20Introduction.md) Introduction
 - **ref**: [`Week 8`](https://swinburne.instructure.com/courses/52786/pages/week-8?module_item_id=3673703) - [`Slides`](https://swinburne.instructure.com/courses/52786/files/27022396) [`⭳`](https://swinburne.instructure.com/courses/52786/files/27022396/download?download_frd=1)
