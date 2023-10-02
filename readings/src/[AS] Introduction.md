@@ -171,7 +171,7 @@ contract Attack {
 
 \[[back to top ↑](#main-contents)\]
 
-See [Lecture 5, function visibility specifiers](https://github.com/COS30049/cos30049_backend/blob/main/readings/%5BSOL%5D%20Fundamentals.md#function).
+See [Lecture 5, function visibility specifiers](https://github.com/COS30049/cos30049_backend/blob/main/readings/src/%5BSOL%5D%20Fundamentals.md#function).
 
 - When the visibility is not specified, the **default visibility of a function is `public`**. 
 - Public function can be accessed **by all parties**. This can lead to a vulnerability if a developer **forgot to set the visibility** and a malicious user is able to make unauthorized or unintended state changes.
