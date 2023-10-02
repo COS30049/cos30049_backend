@@ -28,7 +28,7 @@ function changeOwner(address _newOwner) external onlyOwner public {
        owner = _newOwner;
    }
 ```
->**Explanation**
+>🧑‍🏫 **Explanation**
 >
 >The `onlyOwner` modifier has no parameters and includes a `require` statement that checks that the message sender is the contract owner.
 >
