@@ -17,3 +17,7 @@
 ### Introduction
 - **ref**: [`Week 8`](https://swinburne.instructure.com/courses/52786/pages/week-8?module_item_id=3673703) - [`Slides`](https://swinburne.instructure.com/courses/52786/files/27022396) [`⭳`](https://swinburne.instructure.com/courses/52786/files/27022396/download?download_frd=1)
 - **contents**:
+
+### Vulnerabilities
+- **ref**: [`Week 9`](https://swinburne.instructure.com/courses/52786/pages/week-9?module_item_id=3673701) - [`Slides`](https://swinburne.instructure.com/courses/52786/files/27387408) [`⭳`](https://swinburne.instructure.com/courses/52786/files/27387408/download?download_frd=1)
+- **contents**:
