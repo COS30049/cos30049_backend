@@ -84,7 +84,7 @@ See **[slides](https://swinburne.instructure.com/courses/52786/files/27022396) |
 
 >When a single numerical computation is performed, the output **exceeds the maximum** that a register or memory can store or represent.
 
-- In `solidityidity`, `uint8` is used to store `unsigned integers` that is **8 bits long**. Therefore, in binary it can hold value ranging from 
+- In `Solidity`, `uint8` is used to store `unsigned integers` that is **8 bits long**. Therefore, in binary it can hold value ranging from 
    ```
    00000000 ~ 11111111
    ```
