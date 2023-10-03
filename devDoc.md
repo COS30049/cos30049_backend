@@ -1,3 +1,5 @@
+<p align="right"><code><a href="/"><b> ✕ CLOSE <br></b></a></code></p>
+
 ## Document
 
 ### Architecture Design
