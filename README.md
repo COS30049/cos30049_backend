@@ -5,7 +5,19 @@
 
 Please read the **[submission guidelines](#submission)** carefully to avoid penalties.
 
-<pre>⭐ Quick Links: <a href="readings"><b>Readings</b></a></pre>
+<pre>⭐Quick Links:&nbsp;<a href="readings"><b>📚 Readings</b></a> | <a href="../../../cos30049_frontend"><b>🗃️ Front-End Repository</b></a> | <a href="../../../cos30049_frontend"><b>💬 Discord</b></a>  </pre>
+
+<details>
+	<summary><code><b>CRYPTOX</b></code> &nbsp; Contributors (3)</summary>
+
+<br>
+
+| Name | Student ID | Email |
+| :----: | ---------- | ----- |
+| Ryan Vu | 103511424 | 103511424@student.swin.edu.au |
+| Minh Nguyen (leader) | 103534696 | 103534696@student.swin.edu.au |
+| Hoang Bao Phuc Chau | 103523966 | 103523966@student.swin.edu.au |
+</details>
 
 ---
 
