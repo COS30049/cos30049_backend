@@ -57,10 +57,8 @@
 
 ---
 
-⚠️ **Submission will only be marked if**: 
+<pre><p align="center"><br><b>⚠️ WARNING </b> &nbsp; | &nbsp;  <b>Submission will only be marked if</b><br><br><br>✓ The video recording file is uploaded.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>✓ Clear project deployment instructions are provided.</p></pre>
 
-- the video recording file is uploaded
-- clear project deployment instructions are provided
 ---
 
 ## Submission
