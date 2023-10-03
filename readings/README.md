@@ -5,7 +5,7 @@
 
 #### [`Read 📖`](src/%5BSOL%5D%20Fundamentals.md) Fundamentals
 - **ref**: [`Week 5`](https://swinburne.instructure.com/courses/52786/modules/items/3673698) - [`Slides`](https://swinburne.instructure.com/courses/52786/files/26313982) [`⭳`](https://swinburne.instructure.com/courses/52786/files/26313982/download?download_frd=1)
-- **contents**: [`Data Types`](src/%5BSOL%5D%20Fundamentals.md#data-types) | [`Data Storage`](src/%5BSOL%5D%20Fundamentals.md#control-flow) | [`Function`](src/%5BSOL%5D%20Fundamentals.md#data-storage) | [`Control Flow`](src/%5BSOL%5D%20Fundamentals.md#control-flow) | [`Function`](src/%5BSOL%5D%20Fundamentals.md#function) | [`Modify Contract State`](src/%5BSOL%5D%20Fundamentals.md#modify-contract-state)
+- **contents**: [`Data Types`](src/%5BSOL%5D%20Fundamentals.md#data-types) | [`Data Storage`](src/%5BSOL%5D%20Fundamentals.md#data-storage) | [`Control Flow`](src/%5BSOL%5D%20Fundamentals.md#control-flow) | [`Function`](src/%5BSOL%5D%20Fundamentals.md#function) | [`Modify Contract State`](src/%5BSOL%5D%20Fundamentals.md#modify-contract-state)
 
 #### [`Read 📖`](src/%5BSOL%5D%20Contract%20interactions%20and%20libraries.md) Contract interactions and libraries
 - **ref**: [`Week 6`](https://swinburne.instructure.com/courses/52786/pages/week-6?module_item_id=3673699) -  [`Sildes`](https://swinburne.instructure.com/courses/52786/files/26526976) [`⭳`](https://swinburne.instructure.com/courses/52786/files/26526976/download?download_frd=1)
