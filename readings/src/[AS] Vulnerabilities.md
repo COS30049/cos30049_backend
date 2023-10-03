@@ -15,16 +15,14 @@
 - `2016`: a `DAO` was created named, 'The DAO'
    >It was a decentralized investment fund controlled by the community. It raised $150 million worth of Ether (approximately 3.54 million ETH) by selling its own community token.
    >
-   >🔎 More about **`DAOs`**? [`Read`](https://ethereum.org/en/dao/)
-   >
-- `Less than 3 months later`: the DAO was attacked by a 'black hat' hacker. 
->This attack had drained most of the $150 million worth of ETH from The DAO's smart contract and has come to be known as 
->👇
+   ><pre>🔎 More about <b>DAOs</b>? <a href="https://ethereum.org/en/dao/"><b>Explore</b></a></pre>
+- `Less than 3 months later`: the DAO was attacked by a 'black hat' hacker.
+  >This attack had drained most of the $150 million worth of ETH from The DAO's smart contract and has come to be known as\
+  >👇
 ### Re-entrancy Attack
 
->This is an attack which exploits the execution of a Solidity function, a special construct that gets triggered under certain circumstances.
->This function is called …
->👇
+>This is an attack which exploits the execution of a Solidity function, a special construct that gets triggered under certain circumstances.\
+>👇 This function is called
 ### Fallback function
 
 This function features the following aspects
