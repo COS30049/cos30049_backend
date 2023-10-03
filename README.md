@@ -30,8 +30,12 @@
 <pre><p align="center"><br><b>⚠️ WARNING </b> &nbsp; | &nbsp;  Please <b>srictly</b> follow the <a href="#submission"><b>submission guidelines</b></a> to avoid penalties!</p></pre>
 
 ## Core Functional Requrements
-1. All the listed digital assets information should be stored in the database.
-2. The website will implement smart contracts to act as escrow during the trading process, and smart contracts should ensure that assets are held securely until the trade is completed or canceled.
+
+- [x] Users can view digital assets available for trading.
+- [ ] All the listed digital assets information should be stored in the database.
+- [x] The system should provide a search and filter functionality for users to discover specific assets of interest.
+- [ ] The website will implement smart contracts to act as escrow during the trading process, and smart contracts should ensure that assets are held securely until the trade is completed or canceled.
+- [x] Users should have access to a transaction history to view their past trades.
 
 ## Overall Tasks
 1. **Database Design and Implementation**: Design and implement the necessary database structure that aligns with the project's requirements. This involves creating tables, defining relationships, and ensuring efficient data storage and retrieval.
