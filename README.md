@@ -5,6 +5,8 @@
 
 Please read the **[submission guidelines](#submission)** carefully to avoid penalties.
 
+<pre>⭐ Quick Links: <a href="readings"><b>Readings</b></a></pre>
+
 ---
 
 ## Core Functional Requrements
