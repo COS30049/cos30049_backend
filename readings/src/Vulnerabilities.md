@@ -1,9 +1,10 @@
----
-title: Week 9 - Smart contract vulnerabilities introduction
-tags:
-  - COS30049/lectures
----
+## Main Contents
+1. [The DAO Attack](#the-dao-attack)
+2. [Uninitialized Storage Pointer Attack](#uninitialized-storage-pointer-attack)
+
 ## The DAO Attack
+
+\[[← See all readings](../README.md)\]
 
 ### Background
 
@@ -38,9 +39,12 @@ This function features the following aspects
 
 ### Attack Process
 
+\[[back to top ↑](#main-contents)\]
+
 The attack takes advantage of two features of fallback function. Additionally, it relies on a a certain order of operations in the victim contract.
 
-![[../../resources/l9-reentrancy-attack.png]]
+![reentrancy-attack](https://github.com/COS30049/cos30049_backend/assets/139601671/47d52d28-bc5b-4515-bd71-6d7a4627da6c)
+
 <blockquote>
 	<p>Source: <a href="https://blog.chain.link/reentrancy-attacks-and-the-dao-hack/">Reentrancy Attacks and The DAO Hack Explained | Chainlink</a>
 	<details>
@@ -49,27 +53,30 @@ The attack takes advantage of two features of fallback function. Additionally, i
 				<li>A function <b>makes an external call to another untrusted contract.</b></li>
 				<li>The untrusted contract <b>makes a recursive call back</b> to the original function in an attempt to drain funds.</li>
 			</ul>
-			<pre><p align="center">Expand to see explanation ▼</p></pre>
+			<pre><p align="center"><br>[ Expand to see explanation ▼ ]</p></pre>
 		</summary>
 		
-		<p>The hacker deploys a smart contract that acts as the “investor,” and this contract deposits some ETH into The DAO. This entitles the hacker to later call the <code>withdraw()</code> function in The DAO’s smart contract. When the <code>withdraw()</code> function is eventually called, The DAO’s contract sends ETH to the hacker. But the hacker’s smart contract intentionally does not have a <code>receive()</code> function, so when it receives ETH from the withdraw request, the hacker’s fallback function gets triggered. This fallback function could have been empty and still received the ETH, but instead it has some malicious code in it. </p>
+<p align="justify">The hacker deploys a smart contract that acts as the “investor,” and this contract deposits some ETH into The DAO. This entitles the hacker to later call the <code>withdraw()</code> function in The DAO’s smart contract. When the <code>withdraw()</code> function is eventually called, The DAO’s contract sends ETH to the hacker. But the hacker’s smart contract intentionally does not have a <code>receive()</code> function, so when it receives ETH from the withdraw request, the hacker’s fallback function gets triggered. This fallback function could have been empty and still received the ETH, but instead it has some malicious code in it. </p>
 		
-		<p>This code, immediately upon execution, calls The DAO’s smart contract’s <code>withdraw()</code> function again. This sets off a loop of calls because at this point the first call to <code>withdraw()</code> is still executing. It will only finish executing when the hacker contract’s fallback function finishes, but that instead has re-called <code>withdraw()</code>, which kicks off a nested cycle of calls between the hacker contract and The DAO’s smart contract.</p>
+<p align="justify">This code, immediately upon execution, calls The DAO’s smart contract’s <code>withdraw()</code> function again. This sets off a loop of calls because at this point the first call to <code>withdraw()</code> is still executing. It will only finish executing when the hacker contract’s fallback function finishes, but that instead has re-called <code>withdraw()</code>, which kicks off a nested cycle of calls between the hacker contract and The DAO’s smart contract.</p>
 		
-		<p>Each time <code>withdraw()</code> is called, The DAO’s smart contract tries to send the hacker an amount of ETH equivalent to the hacker’s deposit. But, crucially, it does not update the hacker’s account balance until <em>after</em> the ETH-sending transaction finishes. But the ETH sending transaction cannot finish until the hacker’s fallback function finishes executing. So the DAO’s contract keeps sending more and more ETH to the hacker without decrementing the hacker’s balance—thus draining The DAO’s funds.</p>
+<p align="justify">Each time <code>withdraw()</code> is called, The DAO’s smart contract tries to send the hacker an amount of ETH equivalent to the hacker’s deposit. But, crucially, it does not update the hacker’s account balance until <em>after</em> the ETH-sending transaction finishes. But the ETH sending transaction cannot finish until the hacker’s fallback function finishes executing. So the DAO’s contract keeps sending more and more ETH to the hacker without decrementing the hacker’s balance—thus draining The DAO’s funds.</p>
 </details>
 </blockquote>
+
 ### Code walkthrough
 
-See **slides** (p.9 - 12).
+See **[slides](https://swinburne.instructure.com/courses/52786/files/27387408) | [⭳](https://swinburne.instructure.com/courses/52786/files/27387408/download?download_frd=1)** (p.9 - 12).
 
 ## Uninitialized Storage Pointer Attack
+
+\[[back to top ↑](#main-contents)\] \[[← See all readings](../README.md)\]
 
 ### Storage and Memory
 
 >There are two main places where variables can be stored: `storage` and `memory`.
 
-See [[Lecture 5#Data Storage|Lecture 5, Data Storage]]
+See [Lecture 5, data storage](%5BSOL%5D%20Fundamentals.md#data-storage).
 
 - `Solidity` allows you to choose the type of storage with the help of `storage` and `memory` keywords. 
 - A `storage` variable stores values **permanently**, whereas memory `variables` are persisted during the lifetime of a transaction. •
@@ -79,6 +86,8 @@ See [[Lecture 5#Data Storage|Lecture 5, Data Storage]]
 In `Solidity`, when dealing with complex data types (like structs or arrays), developers can work with either storage or memory variables. **However, if a developer declares a variable without initializing it with a specific data location (`storage` or `memory`)**, it might point to `storage` by default, leading to unexpected behaviours and vulnerabilities.
 
 ### Vulnerabilities
+
+\[[back to top ↑](#main-contents)\]
 
 >A developer creates a function intending to work with a temporary memory structure, but forgets to explicitly declare the data location as `memory`
 
@@ -90,11 +99,13 @@ In `Solidity`, when dealing with complex data types (like structs or arrays), de
 
 	An attacker interacts with the function, providing inputs that manipulate the unintentionally *exposed storage variables*, **altering the contract’s behaviour or state in malicious ways.**
 
-#### Code examples
+#### Code example
 
-See **slides** (p.17 - 24).
+See **[slides](https://swinburne.instructure.com/courses/52786/files/27387408) | [⭳](https://swinburne.instructure.com/courses/52786/files/27387408/download?download_frd=1)** (p.17 - 24).
 
 ### Mitigation Strategies
+
+\[[back to top ↑](#main-contents)\]
 
 >Understanding and mitigating such vulnerabilities is crucial for developing secure smart contracts and protecting them (and their users) against potential attacks.
 
