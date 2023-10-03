@@ -44,7 +44,7 @@ The attack takes advantage of two features of fallback function. Additionally, i
 ![reentrancy-attack](https://github.com/COS30049/cos30049_backend/assets/139601671/47d52d28-bc5b-4515-bd71-6d7a4627da6c)
 
 <blockquote>
-	<p>Source: <a href="https://blog.chain.link/reentrancy-attacks-and-the-dao-hack/">Reentrancy Attacks and The DAO Hack Explained | Chainlink</a>
+	<p>Source: <a href="https://blog.chain.link/reentrancy-attacks-and-the-dao-hack/#what_is_a_reentrancy_attack_in_solidity_">Reentrancy Attacks and The DAO Hack Explained | Chainlink</a>
 	<details>
 		<summary>A re-entrancy attack occurs when:
 			<ul>
