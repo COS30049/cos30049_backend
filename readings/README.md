@@ -1,3 +1,5 @@
+<h1>📚 Readings</h1>
+
 <pre><p align="center"><br><b>💡TIPS </b> &nbsp; | &nbsp;  <b>Hold "<kbd>Ctrl</kbd> + Click"</b> to open non-github links in new tab!</b></p></pre>
 
 <p align="center"><code><a href="src">[ <b>🗁 View All Readings</b> ]</a></code> &nbsp; <code><a href="../../../upload/main/readings/src">[ ⭱ <b>Upload a Reading</b> ]</a></code> &nbsp; <code><a href="../">[ <b>✕ Exit Readings</b> ]</a></code></p>
