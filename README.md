@@ -3,10 +3,8 @@
 </a>
 </p>
 
-Please **strictly** follow the **[submission guidelines](#submission)** to avoid penalties.
-
 <pre>⭐ Quick Links:&nbsp;<a href="readings"><b>📚 Readings</b></a> | <a href="../../../cos30049_frontend"><b>🗃️ Front-End Repository</b></a> | <a href="https://discord.com/channels/1139360232749940766/1139360238395478068"><b>💬 Discord</b></a>  </pre>
-
+<hr>
 <details>
 	<summary><b>Team Information</b></summary>
 	<br>
@@ -27,6 +25,8 @@ Please **strictly** follow the **[submission guidelines](#submission)** to avoid
 </details>
 
 ---
+
+<pre><p align="center"><br><b>⚠️ WARNING </b> &nbsp; | &nbsp;  Please <b>srictly</b> follow the <a href="#submission"><b>submission guidelines</b></a> to avoid penalties!</p></pre>
 
 ## Core Functional Requrements
 1. All the listed digital assets information should be stored in the database.
