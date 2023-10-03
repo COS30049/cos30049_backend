@@ -10,7 +10,7 @@
 	<br>
 
 ![logo](https://github.com/COS30049/cos30049_backend/assets/139601671/2f1b07be-fea0-4113-9be6-7106b7cbdbb7)
-<hr>
+<br><br>
 
 - Group name: `CRYPTOX`
 - Group number: `1-16`
