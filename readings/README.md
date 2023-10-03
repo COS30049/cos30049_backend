@@ -1,4 +1,4 @@
-<pre><p align="center"><br><b>💡TIPS </b> &nbsp; | &nbsp;  Hold "<kbd>Ctrl</kbd> + Click" to open non-github links in new tab!</b></p></pre>
+<pre><p align="center"><br><b>💡TIPS </b> &nbsp; | &nbsp;  <b>Hold "<kbd>Ctrl</kbd> + Click"</b> to open non-github links in new tab!</b></p></pre>
 
 <details>
 	<summary><h3> &nbsp; <img src="https://github.com/COS30049/cos30049_backend/assets/139601671/8b9a1bf7-a9f1-4994-94ac-b544f3011b9f"> Solidity [SOL]</h3></summary>
@@ -23,7 +23,7 @@
 - **ref**: [`Week 8`](https://swinburne.instructure.com/courses/52786/pages/week-8?module_item_id=3673703) - [`Slides`](https://swinburne.instructure.com/courses/52786/files/27022396) [`⭳`](https://swinburne.instructure.com/courses/52786/files/27022396/download?download_frd=1)
 - **contents**: [`Smart Contracts`](src/%5BAS%5D%20Introduction.md#smart-contract) | [`Auditing`](src/%5BAS%5D%20Introduction.md#auditing) | [`Security`](src/%5BAS%5D%20Introduction.md#security) | [`Getting Started`](src/%5BAS%5D%20Introduction.md#getting-started) 
 
-#### Vulnerabilities
+#### [`Read 📖`](src/%5BAS%5D%20Vulnerabilities.md) Vulnerabilities
 - **ref**: [`Week 9`](https://swinburne.instructure.com/courses/52786/pages/week-9?module_item_id=3673701) - [`Slides`](https://swinburne.instructure.com/courses/52786/files/27387408) [`⭳`](https://swinburne.instructure.com/courses/52786/files/27387408/download?download_frd=1)
-- **contents**: `PENDING`
+- **contents**: [`The DAO Attack`](src/%5BAS%5D%20Vulnerabilities.md#the-dao-attack) | [`Uninitialized Storage Pointer Attack`](src/%5BAS%5D%20Vulnerabilities.md#uninitialized-storage-pointer-attack)
 </details>
