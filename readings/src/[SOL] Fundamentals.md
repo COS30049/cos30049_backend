@@ -161,7 +161,7 @@ mapping(address => address) public swapPair;
 
 ## Data Storage
 
-\[[back to top ↑](#main-contents)\]
+\[[back to top ↑](#main-contents)\] \[[← See all readings](../README.md)\]
 
 >There are three types of data storage locations: storage, memory and calldata.
 
