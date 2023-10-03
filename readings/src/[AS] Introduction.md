@@ -14,7 +14,7 @@
 
 ### Use cases
 
-- Digital Identity
+- [Digital Identity](https://ethereum.org/en/decentralized-identity)
 - Cross Border Payments
 - Loans and Mortgages
 - Financial Data Recording
