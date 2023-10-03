@@ -2,7 +2,7 @@
 
 <pre><p align="center"><br><b>💡TIPS </b> &nbsp; | &nbsp;  <b>Hold "<kbd>Ctrl</kbd> + Click"</b> to open non-github links in new tab!</b></p></pre>
 
-<p align="center"><code><a href="src">[ <b>🗁 View All Readings</b> ]</a></code> &nbsp; <code><a href="../../../upload/main/readings/src">[ ⭱ <b>Upload a Reading</b> ]</a></code> &nbsp; <code><a href="../">[ <b>✕ Exit Readings</b> ]</a></code></p>
+<p align="center"><code><a href="src">[ <b>🗁 View All</b> ]</a></code> &nbsp; <code><a href="../../../upload/main/readings/src">[ ⭱ <b>Upload / Add</b> ]</a></code> &nbsp; <code><a href="../">[ <b>✕ Exit</b> ]</a></code></p>
 
 <details>
 	<summary><h3> &nbsp; <img src="https://github.com/COS30049/cos30049_backend/assets/139601671/8b9a1bf7-a9f1-4994-94ac-b544f3011b9f"> Solidity [SOL]</h3></summary>
