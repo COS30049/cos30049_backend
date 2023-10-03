@@ -3,7 +3,7 @@
 </a>
 </p>
 
-Please read the **[submission guidelines](#submission)** carefully to avoid penalties.
+Please **strictly** follow the **[submission guidelines](#submission)** to avoid penalties.
 
 <pre>⭐ Quick Links:&nbsp;<a href="readings"><b>📚 Readings</b></a> | <a href="../../../cos30049_frontend"><b>🗃️ Front-End Repository</b></a> | <a href="https://discord.com/channels/1139360232749940766/1139360238395478068"><b>💬 Discord</b></a>  </pre>
 
