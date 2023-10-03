@@ -1,7 +1,4 @@
-***
-<p align="center"><b><code>💡TIPS</code> &nbsp; | &nbsp;  Hold "<kbd>Ctrl</kbd> + Click" to open non-github links in new tab!</b></p>
-
-***
+<pre><p align="center"><br><b>💡TIPS </b> &nbsp; | &nbsp;  Hold "<kbd>Ctrl</kbd> + Click" to open non-github links in new tab!</b></p></pre>
 
 <details>
 	<summary><h3> &nbsp; <img src="https://github.com/COS30049/cos30049_backend/assets/139601671/8b9a1bf7-a9f1-4994-94ac-b544f3011b9f"> Solidity [SOL]</h3></summary>
