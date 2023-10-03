@@ -1,5 +1,6 @@
 ## Main Contents
 >- [Data Types](#data-types)
+>- [Data Storage](#data-storage)
 >- [Control Flow](#control-flow)
 >- [Function](#function)
 >- [Modify Contract State](#modify-contract-state)
