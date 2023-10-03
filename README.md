@@ -8,15 +8,22 @@ Please read the **[submission guidelines](#submission)** carefully to avoid pena
 <pre>⭐Quick Links:&nbsp;<a href="readings"><b>📚 Readings</b></a> | <a href="../../../cos30049_frontend"><b>🗃️ Front-End Repository</b></a> | <a href="../../../cos30049_frontend"><b>💬 Discord</b></a>  </pre>
 
 <details>
-	<summary><code><b>CRYPTOX</b></code> &nbsp; Contributors (3)</summary>
+	<summary><b>Team Information</b></summary>
+	<br>
 
+![logo](https://github.com/COS30049/cos30049_backend/assets/139601671/2f1b07be-fea0-4113-9be6-7106b7cbdbb7)
 <br>
 
-| Name | Student ID | Email |
-| :----: | ---------- | ----- |
-| Ryan Vu | 103511424 | 103511424@student.swin.edu.au |
-| Minh Nguyen (leader) | 103534696 | 103534696@student.swin.edu.au |
-| Hoang Bao Phuc Chau | 103523966 | 103523966@student.swin.edu.au |
+- Group name: `CRYPTOX`
+- Group number: `1-16`
+- Contributors (3)
+  	<br>
+   
+	| Name | Student ID | Email |
+	| :----: | ---------- | :-----: |
+	| Ryan Vu | 103511424 | 103511424@student.swin.edu.au |
+	| Minh Nguyen `LEADER` | 103534696 | 103534696@student.swin.edu.au |
+	| Hoang Bao Phuc Chau | 103523966 | 103523966@student.swin.edu.au |
 </details>
 
 ---
