@@ -32,10 +32,6 @@
 		```bash
   		conda install -c conda-forge fastapi
   		```
-
-   		```bash
-     	conda install -c "conda-forge/label/cf202003" fastapi
-     	```
      
 	- `uvicorn`:
 		```bash
