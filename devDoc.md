@@ -4,7 +4,7 @@
 
 ### Implementation Process
 
-## Set up conda environement
+## Set up environement
 
 1. Create environment
    - Locate the project directory, create a folder with name i.e, 'env' 
