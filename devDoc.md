@@ -12,7 +12,7 @@
       ```bash
   	  conda create -p path\to\project\env python=3.9
   	  ```
-   - Add the project directory path to `envs_dirs` config
+   - Add the project directory path to `envs_dirs` config (do this once)
 
 	  ```bash
       conda config --add envs_dirs path\to\project
