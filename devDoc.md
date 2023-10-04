@@ -4,7 +4,25 @@
 
 ### Implementation Process
 
+## Set up conda environement
 
+1. Create environment
+   - Locate the project directory, create a folder with name i.e, 'env' 
+
+      ```bash
+  	  conda create -p path\to\project\env
+  	  ```
+   - Add the project directory path to `envs_dirs` config
+
+	  ```bash
+      conda config --add envs_dirs path\to\project
+      ```
+   - Set the prompt name
+
+  	 ```bash
+     conda config --set env_prompt '({name})'
+     ```
+     
 
 ### Architecture Design
 Doc: https://drive.google.com/file/d/1DnwRQiimq5pku8-QBjmIaTpaFixNiKkW/view?usp=sharing
