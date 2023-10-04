@@ -32,6 +32,10 @@
 		```bash
   		conda install -c conda-forge fastapi
   		```
+
+		```bash
+     	conda install -c "conda-forge/label/cf202003" fastapi
+     	```
      
 	- `uvicorn`:
 		```bash
@@ -44,10 +48,6 @@
 		```bash
   		pip install web3
   		```
-
-   		```bash
-     	conda install -c "conda-forge/label/cf202003" fastapi
-     	```
      
 	- `py-solc-x`:
 		```bash
