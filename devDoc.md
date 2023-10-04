@@ -54,8 +54,8 @@
   		pip install py-solc-x
   		```
 or ...
-<details>
-	<summary>Change the prefix value in this file and save this as <code>.yml</code></summary>
+	<details>
+		<summary>Change the <code>prefix</code> value in this file and save this as <code>.yml</code></summary>
 
 ```yml
 name: env
@@ -139,11 +139,11 @@ prefix: [path\to\project\env]
 ```
 </details>
 
-then run this in Anaconda Prompt
+   then run this in Anaconda Prompt
 
-```bash
-conda env create -f environment.yml
-```
+   ```bash
+   conda env create -f environment.yml
+   ```
 
 ### Architecture Design
 Doc: https://drive.google.com/file/d/1DnwRQiimq5pku8-QBjmIaTpaFixNiKkW/view?usp=sharing
