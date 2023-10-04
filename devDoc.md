@@ -22,7 +22,42 @@
   	 ```bash
      conda config --set env_prompt '({name})'
      ```
+2. Activate environment
+	```bash
+	conda activate env
+ 	```
+3. Install packages with `conda`
+	
+ 	- `fastapi`:
+		```bash
+  		conda install -c conda-forge fastapi
+  		```
+
+   		```bash
+     	conda install -c "conda-forge/label/cf202003" fastapi
+     	```
      
+	- `uvicorn`:
+		```bash
+  		conda install -c conda-forge uvicorn-standard
+  		```
+
+4. Install packages with `pip`
+	
+ 	- `web3`:
+		```bash
+  		pip install web3
+  		```
+
+   		```bash
+     	conda install -c "conda-forge/label/cf202003" fastapi
+     	```
+     
+	- `py-solc-x`:
+		```bash
+  		pip install py-solc-x
+  		```
+	 
 
 ### Architecture Design
 Doc: https://drive.google.com/file/d/1DnwRQiimq5pku8-QBjmIaTpaFixNiKkW/view?usp=sharing
