@@ -166,9 +166,28 @@ Efficient management and implementation of databases, including schema design, i
 
 ### Database Design/Deployment
 
-ERD
+#### ERD 
+
 https://drive.google.com/file/d/1juDInxldOTca9q0uiPiGJEhruoyqZ7tc/view?usp=sharing
 
+### Set up users
+Copy & Paste to the MySQL CLI:
+```sql
+-- Create users
+CREATE USER 'cryptox_dev'@'localhost' IDENTIFIED BY 'cos30049';
+CREATE USER 'cryptox_client'@'localhost' IDENTIFIED BY 'swinburne';
+
+-- Grant privileges to users
+GRANT CREATE, SELECT, INSERT, UPDATE, DELETE, DROP, ALTER, CREATE VIEW, INDEX, SHOW VIEW, TRIGGER ON * . * TO 'cryptox_dev'@'localhost';
+GRANT SELECT ON *.* TO 'cryptox_client'@'localhost';
+
+-- Review users' privileges
+SHOW GRANTS FOR 'cryptox_dev'@'localhost';
+SHOW GRANTS FOR 'cryptox_client'@'localhost';
+
+```
+
+#### Set up database and tables
 Copy & Paste to the MySQL CLI:
 ```sql
 -- Create DATABASE "cryptox_db" if not exists
