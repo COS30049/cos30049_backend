@@ -148,6 +148,8 @@ prefix: [path\to\project\env]
 ### Architecture Design
 Doc: https://drive.google.com/file/d/1DnwRQiimq5pku8-QBjmIaTpaFixNiKkW/view?usp=sharing
 
+![image](https://github.com/COS30049/cos30049_backend/assets/139601671/35a9f402-20f3-4577-8359-14b0407f3634)
+
 ### Instruction
 Explain abt comment structure, src code structure, how it meets core functionality
 
@@ -162,64 +164,44 @@ Instruction for project deployment
 ## Database
 Efficient management and implementation of databases, including schema design, indexing, and querying, ensuring proper data storage, retrieval and manipulation
 
-### Database Design
-MYSQL Table
-- Table User account
-    username & password & id/#
-    ```
-    # SCHEMA
-    id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
-    username VARCHAR(50) NOT NULL,
-    password VARCHAR(255) NOT NULL,
-    wallet_id VARCHAR(50) NOT NULL
-    ```
-- Transaction
-    - hash
-    - from
-    - to
-    - amount
-    - txn fee
-    - age
-    ```
-    # SCHEMA
-    hash varchar(50) NOT NULL PRIMARY KEY,
-    payer_wId VARCHAR(50) NOT NULL,
-    payee_wId VARCHAR(50) NOT NULL,
-    amount DOUBLE NOT NULL,
-    txn_fee DOUBLE NOT NULL,
-    ```
-- Assets Table
-    - asset information
-        - \#
-        - title
-        - floor price
-        - volume
-        - description
-        - category
-        - owner -> user account (wallet)
-    ```
-    # SCHEMA
-    id VARCHAR(50) NOT NULL PRIMARY KEY,
-    name VARCHAR(20) NOT NULL,
-    desc VARCHAR(200) NULL,
-    category 
-    floor_price DOUBLE NOT NULL,
-    volume DOUBLE NOT NULL,
-    owner userID NOT NULL,
-    FOREIGN KEY owner REFERENCES account(id)   
-    ```
-- Trading Table
-    - assets (foreign key -> assetTable.#)
-    - transaction (foreign key -> transaction.#, nullable, be added after successful(status == done))
-    - buyer (not sure)
-    - seller (not sure, might be duplicate with information in txn)
-    - date of trade
-    - status? (Done -> Create new row in txn table)
-        - Connect with smart contract
-- ...
+### Database Design/Deployment
 
 ERD
 https://drive.google.com/file/d/1juDInxldOTca9q0uiPiGJEhruoyqZ7tc/view?usp=sharing
+
+Copy & Paste to the MySQL CLI:
+```sql
+-- Create DATABASE "cryptox_db" if not exists
+CREATE DATABASE IF NOT EXISTS cryptox_db;
+
+-- Select/Use DATABASE "cryptox_db"
+USE cryptox_db;
+
+-- Create TABLE "account" if not exists
+CREATE TABLE IF NOT EXISTS account (
+    user_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(50) NOT NULL,
+    password VARCHAR(50) NOT NULL,
+    token VARCHAR(50) NOT NULL );
+
+-- Create TABLE "asset" if not exists
+CREATE TABLE IF NOT EXISTS asset (
+    asset_id VARCHAR(128) NOT NULL PRIMARY KEY,
+    floor_price DOUBLE NOT NULL,
+    volume DOUBLE NOT NULL,
+    description TEXT NOT NULL,
+    category ENUM('Music', 'Game', 'Anime', 'DC', 'Sports') NOT NULL,
+    user_id INT NOT NULL,
+    FOREIGN KEY (user_id) REFERENCES account(user_id) );
+
+-- Current tables
+SHOW TABLES;
+
+-- Show all columns of tables
+DESCRIBE account;
+DESCRIBE asset;
+
+```
 
 ## API:
 Dùng để viết doc
