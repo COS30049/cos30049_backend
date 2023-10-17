@@ -206,7 +206,7 @@ CREATE TABLE IF NOT EXISTS account (
 -- Create TABLE "asset" if not exists
 CREATE TABLE IF NOT EXISTS asset (
     asset_id VARCHAR(128) NOT NULL PRIMARY KEY,
-	name VARCHAR(50) DEFAULT 'asset',
+    name VARCHAR(50) DEFAULT 'asset',
     floor_price DECIMAL(30, 18) DEFAULT 0.000000000000000000,
     volume DECIMAL(30, 18) NOT NULL DEFAULT 0.000000000000000000,
     description TEXT NULL,
