@@ -1,4 +1,8 @@
 .editorconfig
+.conda_envs_dir_test
+
+# Directory for conda environment
+env/*
 
 # Logs
 logs
