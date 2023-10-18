@@ -178,7 +178,7 @@ CREATE USER 'cryptox_dev'@'localhost' IDENTIFIED BY 'cos30049';
 CREATE USER 'cryptox_client'@'localhost' IDENTIFIED BY 'swinburne';
 
 -- Grant privileges to users
-GRANT CREATE, SELECT, INSERT, UPDATE, DELETE, DROP, ALTER, CREATE VIEW, INDEX, SHOW VIEW, TRIGGER ON * . * TO 'cryptox_dev'@'localhost';
+GRANT SELECT, INSERT, UPDATE, DELETE, CREATE, DROP, RELOAD, SHUTDOWN, PROCESS, FILE, REFERENCES, INDEX, ALTER, SHOW DATABASES, SUPER, CREATE TEMPORARY TABLES, LOCK TABLES, EXECUTE, REPLICATION SLAVE, REPLICATION CLIENT, CREATE VIEW, SHOW VIEW, CREATE ROUTINE, ALTER ROUTINE, EVENT, TRIGGER, CREATE TABLESPACE ON * . * TO 'cryptox_dev'@'localhost';
 GRANT SELECT ON *.* TO 'cryptox_client'@'localhost';
 
 -- Review users' privileges
@@ -203,6 +203,22 @@ CREATE TABLE IF NOT EXISTS account (
     password VARCHAR(50) NOT NULL,
     token VARCHAR(50) NOT NULL );
 
+-- Create TABLE "smart_contract" if not exists
+CREATE TABLE IF NOT EXISTS smart_contract (
+    contract_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    contract_add VARCHAR(256) NOT NULL,
+    contract_abi TEXT NOT NULL,
+    asset_id VARCHAR(128) NOT NULL,
+    FOREIGN KEY(asset_id) REFERENCES asset(asset_id) );
+
+-- Create TABLE "transaction_receipt" if not exists
+CREATE TABLE IF NOT EXISTS transaction_receipt (
+    receipt_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    smartcontract_id INT NOT NULL,
+    details TEXT NOT NULL,
+    FOREIGN KEY(smartcontract_id) REFERENCES smart_contract(contract_id)
+);
+
 -- Create TABLE "asset" if not exists
 CREATE TABLE IF NOT EXISTS asset (
     asset_id VARCHAR(128) NOT NULL PRIMARY KEY,
@@ -218,6 +234,8 @@ SHOW TABLES;
 
 -- Show all columns of tables
 DESCRIBE account;
+DESCRIBE smart_contract;
+DESCRIBE transaction_receipt;
 DESCRIBE asset;
 
 ```
