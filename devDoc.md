@@ -206,12 +206,12 @@ CREATE TABLE IF NOT EXISTS account (
 -- Create TABLE "asset" if not exists
 CREATE TABLE IF NOT EXISTS asset (
     asset_id VARCHAR(128) NOT NULL PRIMARY KEY,
-    name VARCHAR(50) DEFAULT 'asset',
+    name VARCHAR(50) NOT NULL
     floor_price DECIMAL(30, 18) DEFAULT 0.000000000000000000,
     volume DECIMAL(30, 18) NOT NULL DEFAULT 0.000000000000000000,
     description TEXT NULL,
     category ENUM('Music', 'Game', 'Anime', 'DC', 'Sports') NOT NULL,
-    user_id INT NULL,
+    user_id INT NOT NULL,
     FOREIGN KEY (user_id) REFERENCES account(user_id) );
 
 -- Current tables
