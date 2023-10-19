@@ -201,7 +201,7 @@ CREATE TABLE IF NOT EXISTS account (
     user_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
     username VARCHAR(50) NOT NULL,
     password VARCHAR(50) NOT NULL,
-    token VARCHAR(50) NOT NULL );
+    token VARCHAR(50) NOT NULL ) UNIQUE;
 
 /* 
  * <!> THIS IS FOR DEMONSTRATION PURPOSE ONLY BECAUSE
@@ -227,6 +227,7 @@ CREATE TABLE IF NOT EXISTS transaction_receipt (
     receipt_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
     smartcontract_id INT NOT NULL,
     details TEXT NOT NULL,
+    txn_time TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
     FOREIGN KEY(smartcontract_id) REFERENCES smart_contract(contract_id)
 );
 
@@ -234,8 +235,8 @@ CREATE TABLE IF NOT EXISTS transaction_receipt (
 CREATE TABLE IF NOT EXISTS asset (
     asset_id VARCHAR(128) NOT NULL PRIMARY KEY,
     name VARCHAR(50) NOT NULL,
-    floor_price DECIMAL(30, 18) DEFAULT 0.000000000000000000,
-    volume DECIMAL(30, 18) DEFAULT 0.000000000000000000,
+    floor_price DECIMAL(30, 18) NOT NULL DEFAULT 0.000000000000000000,
+    volume DECIMAL(30, 18) NOT NULL DEFAULT 0.000000000000000000,
     description TEXT NOT NULL,
     category ENUM('Music', 'Game', 'Anime', 'DC', 'Sports') NOT NULL,
     user_id INT NOT NULL,
@@ -269,6 +270,32 @@ VALUES
 
 SELECT * FROM private_key;
 ```
+
+```sql
+--- Populate account table
+-- Insert 10 additional records into the "account" table
+-- Generate random lowercase usernames and passwords
+
+INSERT INTO account (username, password, token)
+VALUES
+  ('crytox_admin', 'password1', '0xDC54710Fa3527fA5248076D45544be52218d8a0a');
+
+INSERT INTO account (username, password, token)
+VALUES
+  ('jane_smith', 'randomPwd', '0x17fF244F87B353db33240526333e0118fA6AD608'),
+  ('mark_johnson', 'p@ssw0rd', '0xFc3829DbF2ABf666e3ca53e71eb3049cf4D3498d'),
+  ('susan_wilson', 'Secret12', '0x636d56a73D1596238E9D92690F3208b0f8ff68cC'),
+  ('michael_brown', 'p@ssw0rd', '0x8cE6008f89e16c90710db852ab3B5fdcc234F9Bd'),
+  ('laura_miller', 'SecurePwd', '0xe4AfEBE1A4c12de13b446a1348DD0dDF4a6beb64'),
+  ('robert_jones', 'password123', '0x5Ac85206D65abC72cC343E9b1DC8BCFd79D635EC'),
+  ('emily_davis', 'myP@ss', '0x4252Fa1Fa52fa2ED86a8f51c3e097D6dB0FC9A07'),
+  ('jacob_wilson', 'newPwd', '0x9a9A3B5bc3e1A9082A3A38FE437bC0F51F28563c');
+
+-- You can adjust the password generation logic to meet your specific requirements.
+-- The above passwords are just examples.
+
+```
+
 
 ## API:
 Dùng để viết doc
