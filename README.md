@@ -126,6 +126,7 @@ There is a folder file named COS30049 in directory ganacheWorkspace in the zip f
   ```
 
 ## APIs
+<sup>[**\[ Back to Contents  ↑ \]**](#nav)</sup>
 ### Login API
 This is an API to send user’s login data to the server and verify it against existing data of server’s database.
 
@@ -200,6 +201,8 @@ METHOD: POST
 </table>
 
 ### Signup API
+<sup>[**\[ Back to Contents  ↑ \]**](#nav)</sup>
+
 This is an API to send user’s signup data to the server and insert it into the existing data of server’s database.
 
 ***Endpoint:*** 
@@ -275,6 +278,8 @@ METHOD: POST
 </table>
 
 ### Get Account API
+<sup>[**\[ Back to Contents  ↑ \]**](#nav)</sup>
+
 This is an API to send user’s signup data to the server and insert it into the existing data of server’s database.
 
 ***Endpoint:***
@@ -347,6 +352,8 @@ METHOD: POST
 </table>
 
 ### Get Assets API
+<sup>[**\[ Back to Contents  ↑ \]**](#nav)</sup>
+
 This is an API to fetch all assets.
 
 ***Endpoint:***
@@ -404,6 +411,8 @@ METHOD: GET
 </table>
 
 ### Buy Assets API Endpoint
+<sup>[**\[ Back to Contents  ↑ \]**](#nav)</sup>
+
 This is an API to be called when user click on button buy
 
 ***Endpoint:***
