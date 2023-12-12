@@ -24,7 +24,7 @@
 
 **CRYPTOX** is a decentralised trading platform that utilises blockchain and smart contract technology.
 
-#### Core Functionalities
+#### Backend Core Functionalities
 - Store digital assets and their metadata and user data in MySQL database
 - Smart contracts to act as escrow during the trading process
 - Frontend integration
