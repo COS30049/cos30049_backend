@@ -168,7 +168,8 @@ METHOD: POST
 
 ```
 {
-  "error": "Sorry, your username 'your-username' is not found, or your password is incorrect!"
+  "error": "Sorry, your username 'your-username' is not found, 
+  or your password is incorrect!"
 }
 ```
 </td>
