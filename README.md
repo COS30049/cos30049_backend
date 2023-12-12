@@ -221,8 +221,8 @@ METHOD: POST
   "token": "your-public-key"
 }
 ```
-***Response:***
 
+***Response:***
 <table>
     <tr>
         <th>Code</th>
