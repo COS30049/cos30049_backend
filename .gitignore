@@ -1,5 +1,8 @@
 .editorconfig
 .conda_envs_dir_test
+__pycache__
+readings/*
+devDoc.md
 
 # Directory for conda environment
 env/*
