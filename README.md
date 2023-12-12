@@ -296,7 +296,7 @@ METHOD: POST
   "username": "myUsername"
 }
 ```
- 
+
 ***Response:***
 <table>
     <tr>
