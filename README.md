@@ -97,22 +97,24 @@ conda activate env
   ```
 
 #### OPTION 2: Create from environment.yml file from submission zip file. (Not recommend if you are Mac user)
-Extract environment.yml from the zip file and then run this in Anaconda Prompt.
+Run this in Anaconda Prompt.
 ```
 conda env create -f path_to_environment.yml
 ```
 
 ### Setup database
-Download and install MySQL Community version then in mysql run
+In MySQL prompt, run
 ```
-mysql -u <yourusername> -p <yourpassword> < deApp.sql
+mysql -u <yourusername> -p <yourpassword> < deploy/deApp.sql
 ```
 
 or simply copy the content of the aforementioned file then paste it to MySQL prompt that has already been logged in.
 
 ### Set up Ganache
 
-There is a folder file named COS30049 in directory ganacheWorkspace in the zip file that the team submitted. Extract the file and copy the folder to `%appdata%\Ganache\ui\workspaces` (Windows) or Ganache workspace folder for MacOS/Linux (`~/Library/Application Support/Ganache`).
+There is a folder file named COS30049 under `deploy`. Move the folder to: 
+- `%appdata%\Ganache\ui\workspaces` (Windows)
+- `~/Library/Application Support/Ganache` (MacOS/Linux)
 
 ## Getting started
 <sup>[**\[ Back to Contents  ↑ \]**](#nav)</sup>
