@@ -474,7 +474,6 @@ METHOD: POST
 | :------------------- | ---------- | :---------------------------: |
 | Minh Nguyen `LEADER` | 103534696  | 103534696@student.swin.edu.au |
 | Ryan Vu              | 103511424  | 103511424@student.swin.edu.au |
-| Hoang Bao Phuc Chau  | 103523966  | 103523966@student.swin.edu.au |
 
 ## Licence
 <sup>[**\[ Back to Contents  ↑ \]**](#nav)</sup>
